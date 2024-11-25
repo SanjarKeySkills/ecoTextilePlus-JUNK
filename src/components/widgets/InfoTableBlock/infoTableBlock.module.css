@@ -1,0 +1,70 @@
+.infoTableBlock {
+    width: 100%;
+    padding: 40px 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.infoList {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 72px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.infoText {
+    width: 100%;
+    padding: 0 24px;
+    font-size: 24px;
+}
+
+.infoCard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+ul {
+    padding: 16px 24px 24px;
+    list-style-type: "⟐";
+}
+li {
+    font-size: 16px;
+    padding: 0 0 8px 8px;
+}
+
+.headList {
+    font-size: 20px;
+    text-align: center;
+}
+
+.industryBlock {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #ff851b;
+    padding: 24px;
+}
+
+.alumnyBlock {
+    height: 100%;
+    border-radius: 8px;
+    background-color: #ffbb29;
+}
+
+@media (max-width: 768px) {
+    .headList {
+        height: auto;
+    }
+
+    .infoList {
+        flex-direction: column;
+    }
+
+    .infoCard {
+        gap: 8px;
+    }
+}

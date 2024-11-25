@@ -1,0 +1,117 @@
+.welcome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding: 24px;
+}
+
+.welcomeWrapper {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 0px 120px 40px;
+    background-color: #3d9970;
+}
+
+.welcomeText {
+    font-size: 24px;
+    color: #fff;
+}
+h4 {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+p {
+}
+
+.cardsWrapper {
+    padding: 16px 24px 72px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 24px;
+    background-color: white;
+    box-shadow: 0px 8px 24px -4px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h3 {
+    margin: 15px 0 15px;
+    font-size: 16px;
+}
+p {
+    font-size: 16px;
+}
+img {
+    margin: -40px 0 10px;
+    height: 60px;
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    .welcomeWrapper {
+        font-size: 20px;
+    }
+    .cardsWrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 80px;
+    }
+    /* .card {
+        display: grid;
+        div:nth-child(1) {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        div:nth-child(2) {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        div:nth-child(3) {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        div:nth-child(4) {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        img {
+            margin: 0 auto;
+            margin-top: -40px;
+        }
+
+        h3 {
+            margin-bottom: 8px;
+        }
+    } */
+}
+
+@media (max-width: 768px) {
+    .cardsWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 425px) {
+    .welcomeWrapper {
+        padding: 16px 8px 40px;
+    }
+}
