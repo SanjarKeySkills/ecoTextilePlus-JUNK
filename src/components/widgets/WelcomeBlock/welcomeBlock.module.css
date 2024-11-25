@@ -36,6 +36,11 @@ p {
     color: #ff851b;
 }
 
+.annotationBox {
+    background-color: #fff;
+    width: 900px;
+}
+
 .cardsWrapper {
     padding: 16px 24px 72px;
     max-width: 1440px;
