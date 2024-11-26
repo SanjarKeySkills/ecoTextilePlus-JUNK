@@ -1,10 +1,11 @@
 import React from "react";
-import Header from "../../widgets/HeaderBlock/Header.jsx";
-import Hero from "../../widgets/MainBlock/Hero/Hero.jsx";
-import WelcomeBlock from "../../widgets/WelcomeBlock/WelcomeBlock.jsx";
+import Header from "../../widgets/Header/Header.jsx";
+import Hero from "../../widgets/Hero/Hero.jsx";
+import WelcomeBlock from "../../widgets/WelcomeBlock/Welcome.jsx";
 import InfoTableBlock from "../../widgets/InfoTableBlock/InfoTableBlock.jsx";
 import Partners from "../../widgets/partners/Partners.jsx";
-// import Footer from "../../widgets/FooterBlock/Footer.jsx";
+import Gallery from "../../widgets/Gallery/Gallery.jsx";
+import Footer from "../../widgets/Footer/Footer.jsx";
 
 const MainPage = () => {
     return (
@@ -14,7 +15,8 @@ const MainPage = () => {
             <WelcomeBlock />
             <InfoTableBlock />
             <Partners />
-            {/* <Footer /> */}
+            <Gallery />
+            <Footer />
         </div>
     );
 };

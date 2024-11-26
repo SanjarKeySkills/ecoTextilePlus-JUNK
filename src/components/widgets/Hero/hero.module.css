@@ -33,13 +33,14 @@
 }
 .heroManifest {
     max-width: 100%;
-    padding: 24px;
+    padding: 16px;
     background-color: #ff851b;
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    font-size: 20px;
 }
 p {
     padding: 16px;
@@ -47,7 +48,7 @@ p {
 }
 
 video {
-    width: 1024px;
+    max-width: 1024px;
     object-fit: cover;
     border-radius: 8px;
     text-align: center;
@@ -63,7 +64,7 @@ video {
     }
     .heroManifest {
         max-width: 100%;
-        padding: 8px 16px;
+        padding: 8px;
     }
 }
 
@@ -78,11 +79,25 @@ video {
         flex-direction: column;
         padding: 8px;
     }
+    .heroContent {
+        margin-top: 16px;
+        padding: 8px;
+    }
     .heroWrapper {
         max-width: 560px;
         padding: 8px;
     }
+    .heroManifest {
+        font-size: 16px;
+    }
 }
+
+@media (max-width: 768px) {
+    .heroContainer {
+        margin-top: 160px;
+    }
+}
+
 @media (max-width: 424px) {
     .heroContent {
         font-size: 16px;

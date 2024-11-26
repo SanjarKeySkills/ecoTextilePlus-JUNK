@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./hero.module.css";
-import videoBg from "../../../../assets/videoplayback.mp4";
+import videoBg from "../../../assets/videoplayback.mp4";
 
 const Hero = () => {
     const videoRef = useRef(null);

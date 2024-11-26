@@ -13,20 +13,19 @@
     gap: 24px;
 }
 .infoText {
-    width: 100%;
     font-size: 24px;
 }
 .infoCard {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
+    align-items: center;
     gap: 24px;
 }
 .industryBlock {
-    width: 100%;
     border-radius: 8px;
     background-color: #ff851b;
     padding: 24px;
+    width: 50%;
 }
 .listWrapper {
     display: flex;
@@ -39,31 +38,25 @@ li {
 
 @media (max-width: 1024px) {
     .infoTableBlock {
-        width: 100%;
         padding: 24px 8px;
-        font-family: "Lato", sans-serif;
-        font-weight: 400;
+    }
+    .infoText {
+        font-size: 16px;
     }
     .industryBlock {
-        max-width: 880px;
+        width: 88%;
         border-radius: 8px;
         background-color: #ff851b;
-        padding: 24px;
     }
     .headList {
         height: auto;
     }
-
     .infoList {
         flex-direction: column;
         padding: 0 24px 40px;
     }
-
     .infoCard {
         flex-direction: column;
         gap: 16px;
-    }
-    li {
-        max-width: 100%;
     }
 }

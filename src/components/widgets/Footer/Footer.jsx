@@ -15,8 +15,8 @@ const Footer = () => {
                         className={styles.footerLogo}
                     />
                     <p>
-                        Кыргызская Республика г.Бишкек ул.Ахунбаева 169, 6 этаж,
-                        кабинет 10
+                        Кыргызская Республика г.Бишкек ул.Ахунбаева 169, 2 этаж,
+                        кабинет 1
                     </p>
                     <p>
                         +996 552 702 740
@@ -24,7 +24,7 @@ const Footer = () => {
                         <a href="#">askatmazhitov@gmail.com</a>
                     </p>
                 </div>
-                <div className={styles.footerList}>
+                {/* <div className={styles.footerList}>
                     <ul>
                         <li>
                             <a href="/">О КОМПАНИИ</a>
@@ -33,7 +33,7 @@ const Footer = () => {
                             <a href="/contacts">КОНТАКТЫ</a>
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 <div className={styles.footerInfo}>
                     <span>Все права защищены.</span>
                     <p>

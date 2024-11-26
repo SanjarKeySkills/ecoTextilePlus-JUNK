@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./headerBlock.module.css";
+import styles from "./header.module.css";
 import logo from "../../../assets/ecotextile_logo.png";
 import burgerButton from "../../../assets/uIelements/burgerButton.svg";
 import arrowPopUp from "../../../assets/uIelements/arrowPopUp.svg";
@@ -73,7 +73,16 @@ const Header = () => {
                                 onClick={changeStyle}
                             />
                         </div>
-                        <ul className={styles.listPopUp}>
+                        <p>
+                            Кыргызская Республика г.Бишкек ул.Ахунбаева 169, 2
+                            этаж, кабинет 1
+                        </p>
+                        <p>
+                            +996 552 702 740
+                            <tr />
+                            <a href="#">askatmazhitov@gmail.com</a>
+                        </p>
+                        {/* <ul className={styles.listPopUp}>
                             <li>
                                 <a href="/">НА ГЛАВНУЮ</a>
                             </li>
@@ -92,7 +101,7 @@ const Header = () => {
                                     КОНТАКТЫ
                                 </a>
                             </li>
-                        </ul>
+                        </ul> */}
                         <a className={styles.buttonHero} href="/contact">
                             СВЯЗАТЬСЯ С НАМИ
                         </a>

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./welcomeBlock.module.css";
+import styles from "./welcome.module.css";
 
 const WelcomeBlock = () => {
     return (
