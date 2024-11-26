@@ -74,42 +74,24 @@ const Header = () => {
                             />
                         </div>
                         <p>
-                            Кыргызская Республика г.Бишкек ул.Ахунбаева 169, 2
-                            этаж, кабинет 1
+                            Кыргызская Республика <br />
+                            <br /> г.Бишкек ул. Ахунбаева 169
+                            <br />
+                            <br /> 2 этаж, кабинет 1
                         </p>
                         <p>
                             +996 552 702 740
                             <tr />
-                            <a href="#">askatmazhitov@gmail.com</a>
                         </p>
-                        {/* <ul className={styles.listPopUp}>
-                            <li>
-                                <a href="/">НА ГЛАВНУЮ</a>
-                            </li>
-                            <li>
-                                <a href="/gallery" className={styles.link}>
-                                    ГАЛЛЕРЕЯ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/services" className={styles.link}>
-                                    УСЛУГИ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/contact" className={styles.link}>
-                                    КОНТАКТЫ
-                                </a>
-                            </li>
-                        </ul> */}
-                        <a className={styles.buttonHero} href="/contact">
+                        <a href="#">askatmazhitov@gmail.com</a>
+                        <a className={styles.headerButton} href="/contact">
                             СВЯЗАТЬСЯ С НАМИ
                         </a>
                         <div className={styles.lans}>
                             <a href="/" className={styles.lanRu}>
                                 RU
                             </a>
-                            <a href="#" className={styles.lanEn}>
+                            <a href="/" className={styles.lanEn}>
                                 EN
                             </a>
                         </div>
