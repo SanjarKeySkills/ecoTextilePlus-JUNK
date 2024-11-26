@@ -26,12 +26,14 @@ const Header = () => {
                 <img src={logo} alt="main" className={styles.logoHeader} />
                 <div className={styles.headerInfo}>
                     <p className={styles.headerText}>
-                        Миссия компании ОсОО "Ду Кастомс" заключается в
-                        разработке и внедрении экологически чистых технологий
-                        переработки отходов швейной отрасли. Мы стремимся
-                        снизить нагрузку на окружающую среду, предлагая
-                        эффективные решения для переработки тканей без сжигания,
-                        превращая их в полезные и востребованные материалы.
+                        Снижая нагрузку на окружающую среду через эффективные
+                        решения по переработки тканей без сжигания, производим
+                        востребованный и ценный продукт.
+                        <br />
+                        <br />
+                        Миссия компании ОсОО "Ду Кастомс" - внедрение
+                        экологически чистых технологий по переработке отходов
+                        швейной отрасли.
                     </p>
                     {/* <li className={styles.dropdown}>
                         <button
@@ -39,12 +41,18 @@ const Header = () => {
                             onClick={togglePndMenu}>
                             О КОМПАНИИ
                         </button>
-
-
-
                         {isPndMenuOpen && (
                             <ul className={styles.dropdownMenu}>
-                               
+                               <li>
+                            <a href="/about" className={styles.navLink}>
+                                МИССИЯ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/services" className={styles.navLink}>
+                                УСЛУГИ
+                            </a>
+                        </li>
                             </ul>
                         )}
                     </li> */}
@@ -66,20 +74,17 @@ const Header = () => {
                             </a>
                         </li>
                     </ul> */}
-                    <a className={styles.headerButton} href="/contact">
-                        СВЯЗАТЬСЯ С НАМИ
+                </div>
+                <a className={styles.headerButton} href="/contact">
+                    СВЯЗАТЬСЯ С НАМИ
+                </a>
+                <div className={styles.lanBtnWraper}>
+                    <a href="/" className={styles.lanRu}>
+                        RU
                     </a>
-                    <div className={styles.lanBtnWraper}>
-                        <a href="/" className={styles.lanRu}>
-                            RU
-                        </a>
-                        <a href="#" className={styles.lanEn}>
-                            EN
-                        </a>
-                        {/* <a href="#" className={styles.lanRu}>
-                                KG
-                            </a> */}
-                    </div>
+                    <a href="#" className={styles.lanEn}>
+                        EN
+                    </a>
                 </div>
             </div>
             <div className={styles.headerMobile}>
