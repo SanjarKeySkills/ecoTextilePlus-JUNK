@@ -74,14 +74,9 @@ img {
         right: 16px;
     }
 }
-
-/* @media (max-width: 768px) {
-    .wrapperPartnersSlider {
-        h2 {
-            font-size: 24px;
-        }
+@media (max-width: 768px) {
+    .slide {
+        width: 40%;
+        height: 30%;
     }
-    .slider {
-        margin: 8px auto 32px;
-    }
-} */
+}
