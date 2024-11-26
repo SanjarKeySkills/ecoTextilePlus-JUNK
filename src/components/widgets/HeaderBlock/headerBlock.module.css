@@ -60,22 +60,6 @@
     font-size: 14px;
     color: #ffffff;
 }
-
-/* ul {
-    padding: 0;
-}
-li {
-    list-style-type: none;
-    margin: 0;
-}
-.navLink {
-    color: #5d6267;
-    font-style: normal;
-    text-decoration: none;
-    padding: 0;
-    font-size: 16px;
-} */
-
 .lanBtnWraper {
     display: flex;
     align-items: center;
@@ -86,8 +70,6 @@ li {
     border: none;
     font-size: 12px;
     text-align: center;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
     text-decoration: none;
     background-color: #3d9970;
     color: #ffffff;
@@ -97,11 +79,9 @@ li {
     border: none;
     font-size: 12px;
     text-align: center;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
     text-decoration: none;
     background-color: #ff851b;
-    color: #fff;
+    color: #ffffff;
 }
 
 /* // popUp menu на кнопки */
@@ -219,7 +199,7 @@ a {
     padding: 32px 0 0 24px;
 }
 
-.listTopPopUp {
+.listPopUp {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,33 +208,12 @@ a {
     font-size: 18px;
 }
 
-.wrapperTopPopUp {
+.wrapperPopUp {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
     margin-bottom: 40px;
-}
-
-.listBottomPopUp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-}
-/* a {
-    font-weight: 700;
-} */
-
-.headerBottomPopUp {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e7ecef;
-    padding: 40px 0;
-    gap: 32px;
 }
 
 /* Responcive */
@@ -277,5 +236,15 @@ a {
     }
     .headerWrapper {
         display: none;
+    }
+    .lans {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .lanRu,
+    .lanEn {
+        padding: 16px;
+        font-size: 16px;
     }
 }

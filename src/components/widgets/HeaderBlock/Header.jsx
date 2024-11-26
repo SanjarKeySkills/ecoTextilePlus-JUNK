@@ -36,46 +36,6 @@ const Header = () => {
                         экологически чистых технологий по переработке отходов
                         швейной отрасли.
                     </p>
-                    {/* <li className={styles.dropdown}>
-                        <button
-                            className={styles.dropdownButton}
-                            onClick={togglePndMenu}>
-                            О КОМПАНИИ
-                        </button>
-                        {isPndMenuOpen && (
-                            <ul className={styles.dropdownMenu}>
-                               <li>
-                            <a href="/about" className={styles.navLink}>
-                                МИССИЯ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/services" className={styles.navLink}>
-                                УСЛУГИ
-                            </a>
-                        </li>
-                            </ul>
-                        )}
-                    </li> */}
-                    {/* <ul className={styles.headerList}>
-                        <li>
-                            <a href="/about" className={styles.navLink}>
-                                МИССИЯ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/services" className={styles.navLink}>
-                                УСЛУГИ
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/contact" className={styles.navLink}>
-                                КОНТАКТЫ
-                            </a>
-                        </li>
-                    </ul> */}
-
                     <div className={styles.headerInfoBtns}>
                         <a className={styles.headerButton} href="/contact">
                             СВЯЗАТЬСЯ С НАМИ
@@ -101,7 +61,7 @@ const Header = () => {
                 <div
                     className={styles.containerPopUp}
                     style={{ display: isOpenPopUp }}>
-                    <div className={styles.wrapperTopPopUp}>
+                    <div className={styles.wrapperPopUp}>
                         <div className={styles.arrowWrapper}>
                             <img
                                 src={arrowPopUp}
@@ -109,14 +69,9 @@ const Header = () => {
                                 onClick={changeStyle}
                             />
                         </div>
-                        <ul className={styles.listTopPopUp}>
+                        <ul className={styles.listPopUp}>
                             <li>
                                 <a href="/">НА ГЛАВНУЮ</a>
-                            </li>
-                            <li>
-                                <a href="/articles" className={styles.link}>
-                                    ПУБЛИКАЦИИ
-                                </a>
                             </li>
                             <li>
                                 <a href="/gallery" className={styles.link}>
@@ -137,10 +92,7 @@ const Header = () => {
                         <a className={styles.buttonHero} href="/contact">
                             СВЯЗАТЬСЯ С НАМИ
                         </a>
-                    </div>
-                    <div className={styles.headerBottomPopUp}>
-                        <ul className={styles.listBottomPopUp}></ul>
-                        <div>
+                        <div className={styles.lans}>
                             <a href="/" className={styles.lanRu}>
                                 RU
                             </a>
