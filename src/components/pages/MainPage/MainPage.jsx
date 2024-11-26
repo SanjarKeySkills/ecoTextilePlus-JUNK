@@ -11,7 +11,7 @@ const MainPage = () => {
         <div>
             <Header />
             <Hero />
-            {/* <WelcomeBlock /> */}
+            <WelcomeBlock />
             {/* <InfoTableBlock />
             <Partners />
             <Footer /> */}
