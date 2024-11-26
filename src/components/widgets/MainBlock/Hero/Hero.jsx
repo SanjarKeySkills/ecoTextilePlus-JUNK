@@ -9,18 +9,30 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className={styles.mainHero}>
-            <div className={styles.mainHeroWrapper}>
-                <div className={styles.mainHeroContent}>
-                    <span className={styles.heroText}>
-                        ПЕРЕРАБОТКА ОТХОДОВ ШВЕЙНОЙ ОТРАСЛИ <br /> НАША
-                        ПРИОРИТЕТНАЯ ЗАДАЧА
-                    </span>
-                    <span className={styles.heroText}>
-                        ДОВЕРЯЙТЕ ПЕРЕРАБОТКУ ПРОФЕССИОНАЛАМ
-                    </span>
+        <div className={styles.hero}>
+            <div className={styles.heroWrapper}>
+                <div className={styles.heroContainer}>
+                    <div className={styles.heroContent}>
+                        Основатель проекта - ОсОО "Ду Кастомс", которая является
+                        лидером в области переработки отходов швейной отрасли.{" "}
+                        <br /> <br />
+                        Мы стремимся предложить инновационные и экологически
+                        безопасные решения для переработки текстильных отходов,
+                        превращая их в полезные материалы, которые могут быть
+                        использованы повторно. <br /> <br />
+                        Этот проект направлен на улучшение экологической
+                        ситуации, снижение смога в городах и уменьшение
+                        воздействия на окружающую среду, обеспечивая будущее без
+                        отходов.
+                    </div>
+                    <video src={videoBg} loop muted ref={videoRef}></video>
                 </div>
-                <video src={videoBg} loop muted ref={videoRef}></video>
+                <div className={styles.heroManifest}>
+                    <p>
+                        ПЕРЕРАБОТКА ОТХОДОВ ШВЕЙНОЙ ОТРАСЛИ НАША ПРИОРИТЕТНАЯ
+                        ЗАДАЧА ДОВЕРЯЙТЕ ПЕРЕРАБОТКУ ПРОФЕССИОНАЛАМ
+                    </p>
+                </div>
             </div>
         </div>
     );
