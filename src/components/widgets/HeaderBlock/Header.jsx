@@ -53,8 +53,12 @@ const Header = () => {
             </div>
             {/* Modile */}
             <div className={styles.headerMobile}>
-                <a href="/" className={styles.logoHeader}>
-                    <img src={logo} alt="main" />
+                <a href="/">
+                    <img
+                        src={logo}
+                        alt="main"
+                        className={styles.logoHeaderPoPup}
+                    />
                 </a>
                 <img src={burgerButton} alt="burger" onClick={changeStyle} />
                 {/* Container PopUp */}
