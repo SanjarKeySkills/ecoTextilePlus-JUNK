@@ -10,7 +10,9 @@
     max-width: 1440px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    padding: 24px;
 }
 .heroContainer {
     padding: 24px;
@@ -30,9 +32,17 @@
 }
 .heroManifest {
     max-width: 100%;
-    padding: 16px;
+    padding: 24px;
     background-color: #ff851b;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+p {
+    padding: 16px;
+    padding: 0 24px;
 }
 
 video {
@@ -43,8 +53,16 @@ video {
 }
 
 @media (max-width: 1324px) {
+    .heroWrapper {
+        max-width: 880px;
+        padding: 16px;
+    }
     video {
         max-width: 400px;
+    }
+    .heroManifest {
+        max-width: 100%;
+        padding: 8px 16px;
     }
 }
 
@@ -57,23 +75,24 @@ video {
 @media (max-width: 880px) {
     .heroContainer {
         flex-direction: column;
+        padding: 8px;
     }
-    span {
-        font-size: 16px;
-        text-align: center;
+    .heroWrapper {
+        max-width: 560px;
+        padding: 8px;
     }
 }
 @media (max-width: 424px) {
     .heroContent {
         font-size: 16px;
-        padding: 24px;
-    }
-    .heroManifest {
         padding: 8px;
     }
-    p {
-        font-size: 16px;
-        text-align: center;
-        padding: 16px;
+    .heroWrapper {
+        max-width: 440px;
+    }
+    .heroManifest {
+        max-width: 320px;
+        padding: 8px;
+        font-size: 14px;
     }
 }

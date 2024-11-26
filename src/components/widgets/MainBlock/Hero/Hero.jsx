@@ -27,10 +27,11 @@ const Hero = () => {
                     </div>
                     <video src={videoBg} loop muted ref={videoRef}></video>
                 </div>
-                <div className={styles.heroManifest}>
-                    <p>
+                <div>
+                    <p className={styles.heroManifest}>
                         ПЕРЕРАБОТКА ОТХОДОВ ШВЕЙНОЙ ОТРАСЛИ НАША ПРИОРИТЕТНАЯ
-                        ЗАДАЧА ДОВЕРЯЙТЕ ПЕРЕРАБОТКУ ПРОФЕССИОНАЛАМ
+                        ЗАДАЧА. <br />
+                        ДОВЕРЯЙТЕ ПЕРЕРАБОТКУ ПРОФЕССИОНАЛАМ
                     </p>
                 </div>
             </div>

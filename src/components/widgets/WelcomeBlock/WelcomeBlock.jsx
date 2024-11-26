@@ -5,8 +5,6 @@ const WelcomeBlock = () => {
     return (
         <div className={styles.welcome}>
             <div className={styles.welcomeWrapper}>
-                <h4>ДОБРО ПОЖАЛОВАТЬ</h4>
-                <div></div>
                 <p className={styles.welcomeText}>
                     Приветствуем вас от имени компании ОсОО "Ду Кастомс"! Мы
                     гордимся тем, что являемся частью движения за экологически
@@ -24,11 +22,6 @@ const WelcomeBlock = () => {
                     <br /> <br />С нами будущее становится более зеленым!
                 </p>
             </div>
-            {/* <div className={styles.annotationBox}>
-                <p className={styles.annotation}>
-                    
-                </p>
-            </div> */}
         </div>
     );
 };
