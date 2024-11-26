@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css";
-import logo from "../../../assets/ecotextile_logo.png";
+import logoFooter from "../../../assets/logoFooter.png";
 import instLogo from "../../../assets/social/instagram-logo.svg";
 import facebookLogo from "../../../assets/social/facebook-logo.svg";
 
@@ -10,18 +10,23 @@ const Footer = () => {
             <div className={styles.footerWrapper}>
                 <div className={styles.footerContacts}>
                     <img
-                        src={logo}
+                        src={logoFooter}
                         alt="Footer Logo"
                         className={styles.footerLogo}
                     />
                     <p>
-                        Кыргызская Республика г.Бишкек ул.Ахунбаева 169, 2 этаж,
-                        кабинет 1
+                        Кыргызская Республика г.Бишкек <br /> <br />
+                        ул.Ахунбаева 169, 2 этаж, кабинет 1
                     </p>
                     <p>
                         +996 552 702 740
-                        <tr />
-                        <a href="#">askatmazhitov@gmail.com</a>
+                        <br />
+                        <br />
+                        <a
+                            href="askatmazhitov@gmail.com"
+                            className={styles.email}>
+                            askatmazhitov@gmail.com
+                        </a>
                     </p>
                 </div>
                 {/* <div className={styles.footerList}>
@@ -35,7 +40,7 @@ const Footer = () => {
                     </ul>
                 </div> */}
                 <div className={styles.footerInfo}>
-                    <span>Все права защищены.</span>
+                    <p>Все права защищены.</p>
                     <p>
                         ОсОО "Ду Кастомс" является профессиональной
                         организацией, объединяющей квалифицированных экспертов в
