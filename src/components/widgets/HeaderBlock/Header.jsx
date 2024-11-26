@@ -7,10 +7,11 @@ import { useState } from "react";
 
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState("none");
+
     const [isPndMenuOpen, setPndMenuOpen] = useState(false);
-    // const togglePopUp = () => {
-    //     setOpenPopUp((prev) => (prev === "none" ? "block" : "none"));
-    // };
+    const togglePopUp = () => {
+        setOpenPopUp((prev) => (prev === "none" ? "block" : "none"));
+    };
     const togglePndMenu = () => {
         setPndMenuOpen((prev) => !prev);
     };
@@ -74,24 +75,29 @@ const Header = () => {
                             </a>
                         </li>
                     </ul> */}
-                </div>
-                <a className={styles.headerButton} href="/contact">
-                    СВЯЗАТЬСЯ С НАМИ
-                </a>
-                <div className={styles.lanBtnWraper}>
-                    <a href="/" className={styles.lanRu}>
-                        RU
-                    </a>
-                    <a href="#" className={styles.lanEn}>
-                        EN
-                    </a>
+
+                    <div className={styles.headerInfoBtns}>
+                        <a className={styles.headerButton} href="/contact">
+                            СВЯЗАТЬСЯ С НАМИ
+                        </a>
+                        <div className={styles.lanBtnWraper}>
+                            <a href="/" className={styles.lanRu}>
+                                RU
+                            </a>
+                            <a href="#" className={styles.lanEn}>
+                                EN
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            {/* Modile */}
             <div className={styles.headerMobile}>
-                <a href="/">
+                <a href="/" className={styles.logoHeader}>
                     <img src={logo} alt="main" />
                 </a>
                 <img src={burgerButton} alt="burger" onClick={changeStyle} />
+                {/* Container PopUp */}
                 <div
                     className={styles.containerPopUp}
                     style={{ display: isOpenPopUp }}>
@@ -141,9 +147,6 @@ const Header = () => {
                             <a href="#" className={styles.lanEn}>
                                 EN
                             </a>
-                            {/* <a href="#" className={styles.lanRu}>
-                                KG
-                            </a> */}
                         </div>
                     </div>
                 </div>
