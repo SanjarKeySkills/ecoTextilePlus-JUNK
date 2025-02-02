@@ -17,7 +17,6 @@ const Gallery = () => {
                     <img src={img3} alt="img3" />
                     <img src={img4} alt="img4" />
                     <img src={img5} alt="img5" />
-                    <img src={img6} alt="img6" />
                 </div>
             </div>
         </>
@@ -25,3 +24,5 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+//  <img src={img6} alt="img6" />
