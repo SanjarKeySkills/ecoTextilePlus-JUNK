@@ -5,7 +5,7 @@ import img2 from "../../../assets/gallery/img2.png";
 import img3 from "../../../assets/gallery/img3.png";
 import img4 from "../../../assets/gallery/img4.png";
 import img5 from "../../../assets/gallery/img5.png";
-import img6 from "../../../assets/gallery/img6.png";
+// import img6 from "../../../assets/gallery/img6.png";
 
 const Gallery = () => {
     return (
