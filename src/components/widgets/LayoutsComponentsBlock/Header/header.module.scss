@@ -1,0 +1,242 @@
+// Header popUp responcive cid.kg
+.containerPopUp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: #fff;
+    ul {
+        padding-inline-start: 0;
+    }
+    li {
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            color: #447ac6;
+        }
+    }
+}
+.arrowWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 32px 0 0 24px;
+}
+.wrapperPopUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+}
+// Top popUp responcive
+.listTopPopUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+// Bottom popUp responcive
+.wrapperBottomPopUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7ecef;
+    padding: 32px 0 88px;
+    gap: 24px;
+}
+.listBottomPopUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-inline-start: 0;
+    a {
+        font-weight: 700;
+    }
+}
+// Bottom popUp lan-btn
+.lanBtnWraper {
+    display: flex;
+    align-items: center;
+    a {
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+.lan {
+    padding: 4px;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    background-color: #5d6267;
+    color: #ffffff;
+    &:hover {
+        background-color: #c69214;
+        color: #ffffff;
+    }
+}
+.lan:focus {
+    background-color: #c69214;
+    outline: none;
+}
+
+// Header desktop
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #fff;
+}
+.headerContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrapperHeaderDesktop {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    border-bottom: 2px solid #ffbb29;
+    ul {
+        padding-inline-start: 0px;
+    }
+}
+.wrapperNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+// Dropdown menu
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownButton {
+    color: #5d6267;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 8px;
+}
+.dropdownContent a {
+    display: block;
+}
+.dropdownContent a:hover {
+    background-color: #fff;
+}
+.dropdown:hover .dropdownContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.dropdown:hover .dropdownButton {
+    background-color: #fff;
+}
+.navLink {
+    color: #5d6267;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+    list-style-type: none;
+    &:hover {
+        text-decoration: none;
+        color: #447ac6;
+    }
+}
+
+// popUp menu на кнопки
+.heroButton {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c69214;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    &:hover {
+        background: #ffbb29;
+        color: #fff;
+    }
+}
+// popUp responcive
+.headerMobile {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 24px 16px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.listBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    li {
+        list-style-type: none;
+    }
+}
+
+// Responcive
+@media (max-width: 1290px) {
+    .headerBottomWrapper {
+        img {
+            max-width: 100%;
+        }
+    }
+    .headerTop {
+        display: none;
+    }
+    .headerBottom {
+        display: none;
+    }
+    .headerMobile {
+        display: flex;
+    }
+}
