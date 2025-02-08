@@ -4,14 +4,13 @@ import styles from "./header.module.scss";
 
 const firstLinks = [
     { to: "/", label: "НА ГЛАВНУЮ" },
-    { to: "/courses", label: "КУРСЫ И ТРЕНИНГИ" },
     { to: "/news", label: "НОВОСТИ" },
     { to: "/articles", label: "ПУБЛИКАЦИИ" },
     { to: "/gallery", label: "ГАЛЕРЕЯ" },
 ];
 
 const secondLinks = [
-    { to: "/members", label: "НАШИ ЭКСПЕРТЫ", className: styles.link },
+    { to: "/members", label: "GOODS", className: styles.link },
     { to: "/about", label: "О ПАЛАТЕ", className: styles.link },
     { to: "/board", label: "ОРГАНЫ УПРАВЛЕНИЯ", className: styles.linkTop },
     { to: "/services", label: "УСЛУГИ", className: styles.link },
