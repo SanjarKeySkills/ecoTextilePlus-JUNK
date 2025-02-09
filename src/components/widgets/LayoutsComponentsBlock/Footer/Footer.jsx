@@ -11,14 +11,10 @@ const Footer = () => {
                         alt="Footer Logo"
                         className={styles.footerLogo}
                     />
+                    <p>Кыргызская Республика г.Бишкек</p>
                     <p>
-                        Кыргызская Республика г.Бишкек ул.Исанова 105/1, 6 этаж,
-                        кабинет 2
-                    </p>
-                    <p>
-                        +996 (555) 888-242
                         <br />
-                        <a href="#">kned.org@gmail.com</a>
+                        <a href="#"> </a>
                     </p>
                 </div>
                 <div className={styles.footerList}>

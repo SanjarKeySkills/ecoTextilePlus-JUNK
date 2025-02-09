@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./components/pages/MainPage/MainPage.async.jsx";
+// import { OurTeam } from
 
 const App = () => {
     return (
@@ -16,6 +17,14 @@ const App = () => {
                             </Suspense>
                         }
                     />
+                    {/* <Route
+                        index
+                        element={
+                            <Suspense fallback={<ContentFallback />}>
+                                <OurTeam />
+                            </Suspense>
+                        }
+                    /> */}
                     <Route
                         path="*"
                         element={
