@@ -1,7 +1,8 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
-import { MainPage } from "./components/pages/MainPage/MainPage.async.jsx";
+import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
+import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 // import { OurTeam } from
 
 const App = () => {
