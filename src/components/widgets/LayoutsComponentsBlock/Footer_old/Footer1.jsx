@@ -1,19 +1,19 @@
 import React from "react";
-import styles from "./footer.module.css";
-import logoFooter from "../../../assets/logoFooter.png";
-import instLogo from "../../../assets/social/instagram-logo.svg";
-import facebookLogo from "../../../assets/social/facebook-logo.svg";
+import styles from "./footer.module.scss";
+// import logoFooter from "../../../assets/logoFooter.png";
+// import instLogo from "../../../assets/social/instagram-logo.svg";
+// import facebookLogo from "../../../assets/social/facebook-logo.svg";
 
 const Footer = () => {
     return (
         <div className={styles.footer}>
             <div className={styles.footerWrapper}>
                 <div className={styles.footerContacts}>
-                    <img
+                    {/* <img
                         src={logoFooter}
                         alt="Footer Logo"
                         className={styles.footerLogo}
-                    />
+                    /> */}
                     <p>
                         Кыргызская Республика г.Бишкек <br /> <br />
                         ул.Ахунбаева 169, 2 этаж, кабинет 1
@@ -49,7 +49,7 @@ const Footer = () => {
                         международного уровня.
                     </p>
                     <div className={styles.footerSocial}>
-                        <a href="*">
+                        {/* <a href="*">
                             <img
                                 src={instLogo}
                                 alt="Instagram"
@@ -62,7 +62,7 @@ const Footer = () => {
                                 alt="Facebook"
                                 className={styles.socialLogo}
                             />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>

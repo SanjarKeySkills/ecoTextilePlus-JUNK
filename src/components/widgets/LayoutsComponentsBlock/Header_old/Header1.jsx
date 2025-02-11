@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./header.module.css";
-import logo from "../../../assets/ecotextile_logo.png";
-import burgerButton from "../../../assets/uIelements/burgerButton.svg";
-import arrowPopUp from "../../../assets/uIelements/arrowPopUp.svg";
+import styles from "./header.module.scss";
+import logo from "../../../../assets/ecotextile_logo.png";
+import burgerButton from "../../../../assets/ui/burgerBtn.svg";
+import arrowPopUp from "../../../../assets/ui/arrowBtn.svg";
 import { useState } from "react";
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles.headerWrapper}>
-                <img src={logo} alt="main" className={styles.logoHeader} />
+                {/* <img src={logo} alt="main" className={styles.logoHeader} /> */}
                 <div className={styles.headerInfo}>
                     <p className={styles.headerText}>
                         Снижая нагрузку на окружающую среду через эффективные
