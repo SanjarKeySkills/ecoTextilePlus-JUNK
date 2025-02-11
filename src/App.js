@@ -1,12 +1,12 @@
 import React, { Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
 // import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 
 const App = () => {
     return (
-        <>
+        <Router>
             <Routes>
                 <Route path="/" element={<DefaultLayout />}>
                     <Route
@@ -35,7 +35,7 @@ const App = () => {
                     /> */}
                 </Route>
             </Routes>
-        </>
+        </Router>
     );
 };
 export default App;
