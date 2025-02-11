@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./gallery.module.scss";
+import styles from "./galleryBlock.module.scss";
 import img1 from "../../../assets/gallery/img1.png";
 import img2 from "../../../assets/gallery/img2.png";
 import img3 from "../../../assets/gallery/img3.png";

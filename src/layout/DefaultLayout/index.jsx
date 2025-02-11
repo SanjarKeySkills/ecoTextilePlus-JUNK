@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import styles from "./index.module.scss";
 import Header from "../../components/Widgets/LayoutsComponentsBlock/Header/Header.jsx";
 import Footer from "../../components/Widgets/LayoutsComponentsBlock/Footer/Footer.jsx";
-import styles from "./index.module.scss";
 
 export const ContentFallback = () => <div className={styles.loader}></div>;
 

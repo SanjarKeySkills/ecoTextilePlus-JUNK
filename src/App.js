@@ -2,8 +2,7 @@ import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
-import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
-// import { OurTeam } from
+// import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 
 const App = () => {
     return (
@@ -13,7 +12,7 @@ const App = () => {
                     <Route
                         index
                         element={
-                            <Suspense fallback={<div>Loading...</div>}>
+                            <Suspense fallback={<ContentFallback />}>
                                 <MainPage />
                             </Suspense>
                         }
@@ -26,14 +25,14 @@ const App = () => {
                             </Suspense>
                         }
                     /> */}
-                    <Route
+                    {/* <Route
                         path="*"
                         element={
                             <Suspense fallback={<div>Loading...</div>}>
                                 <ErrorPage />
                             </Suspense>
                         }
-                    />
+                    /> */}
                 </Route>
             </Routes>
         </>

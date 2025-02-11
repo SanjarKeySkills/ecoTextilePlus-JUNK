@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
-import { arrowPopUp } from "../../../../assets/ui/arrowBtn.svg";
-// import { }
+import arrowPopUp from "../../../../assets/ui/popUpBtn.svg";
+import logo from "../../../../assets/ecotextile_logo.png";
+import burgerButton from "../../../../assets/ui/burgerBtn.svg";
 
 const firstLinks = [
     { to: "/", label: "НА ГЛАВНУЮ" },

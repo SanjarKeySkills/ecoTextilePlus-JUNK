@@ -1,16 +1,16 @@
 import React from "react";
-import WelcomeBlock from "../../components/widgets/WelcomeBlock/Welcome.jsx";
-import InfoTableBlock from "../../components/widgets/InfoTableBlock/InfoTableBlock.jsx";
-import Partners from "../../components/widgets/partners/Partners.jsx";
-import Gallery from "../../components/widgets/Gallery/Gallery.jsx";
+import WelcomeBlock from "../../components/Widgets/WelcomeBlock/WelcomeBlock.jsx";
+import InfoTableBlock from "../../components/Widgets/InfoTableBlock/InfoTableBlock.jsx";
+import PartnersBlock from "../../components/Widgets/PartnersBlock/PartnersBlock.jsx";
+import GalleryBlock from "../../components/Widgets/GalleryBlock/GalleryBlock.jsx";
 
 const MainPage = () => {
     return (
         <div>
             <WelcomeBlock />
             <InfoTableBlock />
-            <Partners />
-            <Gallery />
+            <PartnersBlock />
+            <GalleryBlock />
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./infoTableBlock.module.css";
+import styles from "./infoTableBlock.module.scss";
 
 const InfoTableBlock = () => {
     return (

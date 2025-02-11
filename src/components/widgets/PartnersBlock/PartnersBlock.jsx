@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import styles from "./partners.module.css";
+import styles from "./partnersBlock.module.scss";
 import partnersLogo1 from "../../../assets/partners/cooldbros.png";
 import partnersLogo2 from "../../../assets/partners/globalGarment.png";
 
