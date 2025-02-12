@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
+import { OurTeamPage } from "./pages/OurTeamPage/OurTeamPage.async.jsx";
 
 const App = () => {
     return (
@@ -17,14 +18,14 @@ const App = () => {
                             </Suspense>
                         }
                     />
-                    {/* <Route
-                        index
+                    <Route
+                        path="/team"
                         element={
                             <Suspense fallback={<ContentFallback />}>
-                                <OurTeam />
+                                <OurTeamPage />
                             </Suspense>
                         }
-                    /> */}
+                    />
                 </Route>
                 <Route
                     path="*"
