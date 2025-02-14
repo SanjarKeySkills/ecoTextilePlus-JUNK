@@ -4,6 +4,7 @@ import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 import { OurTeamPage } from "./pages/OurTeamPage/OurTeamPage.async.jsx";
+import { ContactPage } from "./pages/ContactPage/ContactPage.async.jsx";
 
 const App = () => {
     return (
@@ -23,6 +24,14 @@ const App = () => {
                         element={
                             <Suspense fallback={<ContentFallback />}>
                                 <OurTeamPage />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/contacts"
+                        element={
+                            <Suspense fallback={<ContentFallback />}>
+                                <ContactPage />
                             </Suspense>
                         }
                     />
