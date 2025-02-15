@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
-import arrowPopUp from "../../../../assets/ui/popUpBtn.svg";
+// import arrowPopUp from "../../../../assets/ui/popUpBtn.svg";
 import logo from "../../../../assets/ecotextile_logo.png";
 import burgerButton from "../../../../assets/ui/burgerBtn.svg";
 
@@ -19,57 +19,6 @@ const secondLinks = [
     { to: "/services", label: "УСЛУГИ", className: styles.link },
     { to: "/contact", label: "КОНТАКТЫ", className: styles.link },
 ];
-
-const HeaderMobileMenu = (props) => {
-    const { isOpenPopUp, togglePopup } = props;
-    const handlePopUpLinkClick = () => togglePopup(); // Закрытие адаптивного popUp меню
-
-    return (
-        <div
-            className={styles.containerPopUp}
-            style={{ display: isOpenPopUp ? "block" : "none" }}>
-            <div className={styles.wrapperPopUp}>
-                <div className={styles.arrowWrapper}>
-                    <img src={arrowPopUp} alt="arrow" onClick={togglePopup} />
-                </div>
-                <ul className={styles.listTopPopUp}>
-                    {firstLinks.map((link) => (
-                        <li key={link.to}>
-                            <Link
-                                to={link.to}
-                                onClick={handlePopUpLinkClick}
-                                className={styles.link}>
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className={styles.wrapperBottomPopUp}>
-                <ul className={styles.listBottomPopUp}>
-                    {secondLinks.map((link) => (
-                        <li key={link.to}>
-                            <Link to={link.to} onClick={handlePopUpLinkClick}>
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-                <div className={styles.lanBtnWraper}>
-                    <Link to="#" className={styles.lan}>
-                        RU
-                    </Link>
-                    <Link to="#" className={styles.lan}>
-                        EN
-                    </Link>
-                    <Link to="#" className={styles.lan}>
-                        KG
-                    </Link>
-                </div>
-            </div>
-        </div>
-    );
-};
 
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState(false);
@@ -188,5 +137,57 @@ const Header = () => {
         </div>
     );
 };
+
+// mobile
+// const HeaderMobileMenu = (props) => {
+//     const { isOpenPopUp, togglePopup } = props;
+//     const handlePopUpLinkClick = () => togglePopup(); // Закрытие адаптивного popUp меню
+
+//     return (
+//         <div
+//             className={styles.containerPopUp}
+//             style={{ display: isOpenPopUp ? "block" : "none" }}>
+//             <div className={styles.wrapperPopUp}>
+//                 <div className={styles.arrowWrapper}>
+//                     <img src={arrowPopUp} alt="arrow" onClick={togglePopup} />
+//                 </div>
+//                 <ul className={styles.listTopPopUp}>
+//                     {firstLinks.map((link) => (
+//                         <li key={link.to}>
+//                             <Link
+//                                 to={link.to}
+//                                 onClick={handlePopUpLinkClick}
+//                                 className={styles.link}>
+//                                 {link.label}
+//                             </Link>
+//                         </li>
+//                     ))}
+//                 </ul>
+//             </div>
+//             <div className={styles.wrapperBottomPopUp}>
+//                 <ul className={styles.listBottomPopUp}>
+//                     {secondLinks.map((link) => (
+//                         <li key={link.to}>
+//                             <Link to={link.to} onClick={handlePopUpLinkClick}>
+//                                 {link.label}
+//                             </Link>
+//                         </li>
+//                     ))}
+//                 </ul>
+//                 <div className={styles.lanBtnWraper}>
+//                     <Link to="#" className={styles.lan}>
+//                         RU
+//                     </Link>
+//                     <Link to="#" className={styles.lan}>
+//                         EN
+//                     </Link>
+//                     <Link to="#" className={styles.lan}>
+//                         KG
+//                     </Link>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
 
 export default Header;

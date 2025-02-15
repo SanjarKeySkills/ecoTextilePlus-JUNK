@@ -5,6 +5,7 @@ import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 import { OurTeamPage } from "./pages/OurTeamPage/OurTeamPage.async.jsx";
 import { ContactPage } from "./pages/ContactPage/ContactPage.async.jsx";
+import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
 
 const App = () => {
     return (
@@ -35,7 +36,17 @@ const App = () => {
                             </Suspense>
                         }
                     />
+
+                    <Route
+                        path="/gallery"
+                        element={
+                            <Suspense fallback={<ContentFallback />}>
+                                <GalleryPage />
+                            </Suspense>
+                        }
+                    />
                 </Route>
+
                 <Route
                     path="*"
                     element={
