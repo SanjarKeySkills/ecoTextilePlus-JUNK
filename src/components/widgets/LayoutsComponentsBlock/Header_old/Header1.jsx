@@ -7,7 +7,7 @@ import arrowPopUp from "../../../../assets/ui/arrowBtn.svg";
 import { useState } from "react";
 
 const arrLinks = [
-    { to: "/", label: "НА ГЛАВНУЮ" },
+    { to: "/", label: "ГЛАВНАЯ" },
     { to: "/team", label: "КОМАНДА" },
     { to: "/contacts", label: "КОНТАКТЫ" },
     { to: "/gallery", label: "ГАЛЕРЕЯ" },

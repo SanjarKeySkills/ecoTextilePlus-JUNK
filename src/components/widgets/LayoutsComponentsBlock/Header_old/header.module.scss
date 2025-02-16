@@ -7,7 +7,6 @@
     font-weight: 400;
     font-size: 16px;
 }
-
 .headerWrapper {
     width: 1440px;
     padding: 16px;
@@ -18,6 +17,14 @@
     gap: 40px;
     background-color: #f0f0f0;
     border-radius: 8px;
+}
+.listNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    list-style-type: none;
 }
 
 .logoHeader {
