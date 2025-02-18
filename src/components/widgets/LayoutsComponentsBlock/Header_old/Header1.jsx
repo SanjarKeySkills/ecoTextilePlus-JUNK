@@ -8,9 +8,10 @@ import { useState } from "react";
 
 const arrLinks = [
     { to: "/", label: "ГЛАВНАЯ" },
+    { to: "/mission", label: "МИССИЯ" },
     { to: "/team", label: "КОМАНДА" },
-    { to: "/contacts", label: "КОНТАКТЫ" },
     { to: "/gallery", label: "ГАЛЕРЕЯ" },
+    { to: "/contacts", label: "КОНТАКТЫ" },
 ];
 
 const Header = () => {
@@ -30,7 +31,17 @@ const Header = () => {
 
     return (
         <div className={styles.header}>
-            <div className={styles.headerWrapper}>
+            <div className={styles.headerUp}>
+                <a href="/">
+                    <img src={logo} alt="main" className={styles.logoHeader} />
+                </a>
+                <p className={styles.headerText}>
+                    Снижая нагрузку на окружающую среду через эффективные
+                    решения по переработки тканей без сжигания, производим
+                    востребованный и ценный продукт.
+                </p>
+            </div>
+            <div className={styles.headerBottom}>
                 <ul className={styles.listNavbar}>
                     {arrLinks.map((link) => (
                         <li key={link.to}>
@@ -40,6 +51,17 @@ const Header = () => {
                         </li>
                     ))}
                 </ul>
+                <div className={styles.lans}>
+                    <a href="/" className={styles.lanRu}>
+                        RU
+                    </a>
+                    <a href="/" className={styles.lanEn}>
+                        EN
+                    </a>
+                    <a href="/" className={styles.lanKg}>
+                        KG
+                    </a>
+                </div>
             </div>
         </div>
     );
@@ -47,9 +69,6 @@ const Header = () => {
 
 /* Modile */
 // {/* <div className={styles.headerMobile}>
-//     <a href="/">
-//         <img src={logo} alt="main" className={styles.logoHeaderPoPup} />
-//     </a>
 //     <img src={burgerButton} alt="burger" onClick={changeStyle} />
 //     {/* Container PopUp */}
 //     <div className={styles.containerPopUp} style={{ display: isOpenPopUp }}>
@@ -71,30 +90,10 @@ const Header = () => {
 //             <a className={styles.headerButton} href="/contact">
 //                 СВЯЗАТЬСЯ С НАМИ
 //             </a>
-//             <div className={styles.lans}>
-//                 <a href="/" className={styles.lanRu}>
-//                     RU
-//                 </a>
-//                 <a href="/" className={styles.lanEn}>
-//                     EN
-//                 </a>
-//             </div>
 //         </div>
+// Миссия компании ОсОО "Ду Кастомс" - внедрение экологически
+// чистых технологий по переработке отходов швейной отрасли.
 //     </div>
 // </div>;
 
-// text
-{
-    /* <div className={styles.headerInfo}>
-    <p className={styles.headerText}>
-        Снижая нагрузку на окружающую среду через эффективные решения по
-        переработки тканей без сжигания, производим востребованный и ценный
-        продукт.
-        <br />
-        <br />
-        Миссия компании ОсОО "Ду Кастомс" - внедрение экологически чистых
-        технологий по переработке отходов швейной отрасли.
-    </p>
-</div>; */
-}
 export default Header;

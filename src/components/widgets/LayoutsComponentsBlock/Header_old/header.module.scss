@@ -1,22 +1,36 @@
 .header {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
-.headerWrapper {
+.headerUp {
     width: 1440px;
-    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.logoHeader {
+    max-width: 320px;
+}
+.headerText {
+    text-align: center;
+    margin: 0;
+}
+.headerBottom {
+    width: 1440px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 40px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
+    background-color: #013a3c;
 }
 .listNavbar {
     display: flex;
@@ -26,28 +40,20 @@
     gap: 32px;
     list-style-type: none;
 }
-
-.logoHeader {
-    max-width: 424px;
-    border-radius: 0;
+.link {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .logoPopUp {
     display: none;
 }
-
 .headerInfo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
 }
-.headerText {
-    font-style: italic;
-    text-align: justify;
-    margin: 0;
-}
-
 .headerInfoBtns {
     display: flex;
     flex-direction: row;
@@ -84,6 +90,16 @@
     text-align: center;
     text-decoration: none;
     background-color: #ff851b;
+    color: #ffffff;
+}
+
+.lanKg {
+    padding: 4px;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3d9970;
     color: #ffffff;
 }
 
@@ -175,20 +191,17 @@
     left: 0;
     background-color: #ffffff;
 }
-
 .containerPopUp p a {
     font-size: 16px;
     font-style: normal;
     text-decoration: none;
 }
-
 .arrowWrapper {
     width: 100%;
     display: flex;
     justify-content: start;
     padding: 32px 0 0 24px;
 }
-
 .listPopUp {
     display: flex;
     flex-direction: column;
@@ -197,7 +210,6 @@
     gap: 32px;
     font-size: 18px;
 }
-
 .wrapperPopUp {
     display: flex;
     flex-direction: column;
@@ -205,11 +217,9 @@
     gap: 24px;
     margin-bottom: 40px;
 }
-
 .wrapperPopUp p {
     font-size: 16px;
 }
-
 .logoHeaderPoPup {
     max-width: 320px;
 }
