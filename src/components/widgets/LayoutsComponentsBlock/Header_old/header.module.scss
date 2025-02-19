@@ -68,9 +68,10 @@
 // headerBottom
 .headerBottom {
     width: 100%;
+    padding: 24px;
     display: flex;
     flex-direction: row;
-    gap: 64px;
+    gap: 240px;
     justify-content: center;
     align-items: center;
     background-color: #013a3c;
@@ -84,13 +85,13 @@
     cursor: pointer;
 }
 .dropdownContent {
+    padding: 8px;
     display: none;
     position: absolute;
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
-    padding: 8px;
 }
 .dropdownContent .dropdownLink {
     display: block;
