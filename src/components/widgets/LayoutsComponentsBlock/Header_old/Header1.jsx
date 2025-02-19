@@ -81,6 +81,15 @@ const Header = () => {
                         <Link className={styles.dropdownButton}>
                             МЫ ПЕРЕРАБАТЫВАЕМ
                         </Link>
+                        <div className={styles.dropdownContentResponcive}>
+                            {arrForRecycle.map((link) => (
+                                <Link
+                                    key={link.to}
+                                    className={styles.listLinkResponcive}>
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
                         <div className={styles.dropdownContent}>
                             {arrForRecycle.map((link) => (
                                 <Link
@@ -95,6 +104,15 @@ const Header = () => {
                         <Link className={styles.dropdownButton}>
                             МЫ ПРОИЗВОДИМ
                         </Link>
+                        <div className={styles.dropdownContentResponcive}>
+                            {arrForProduct.map((link) => (
+                                <Link
+                                    key={link.to}
+                                    className={styles.listLinkResponcive}>
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
                         <div className={styles.dropdownContent}>
                             {arrForProduct.map((link) => (
                                 <Link
