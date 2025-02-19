@@ -6,7 +6,7 @@ import burgerButton from "../../../../assets/ui/burgerBtn.svg";
 import arrowPopUp from "../../../../assets/ui/arrowBtn.svg";
 import { useState } from "react";
 
-const arrLinksUp = [
+const arrLinks = [
     { to: "/", label: "ГЛАВНАЯ" },
     { to: "/mission", label: "МИССИЯ" },
     { to: "/team", label: "КОМАНДА" },
@@ -14,11 +14,6 @@ const arrLinksUp = [
     { to: "/gallery", label: "ВАКАНСИИ" },
     { to: "/contacts", label: "КОНТАКТЫ" },
 ];
-
-// const arrLinksButtom = [
-//     { to: "/gallery", label: "ГАЛЕРЕЯ" },
-//     { to: "/contacts", label: "КОНТАКТЫ" },
-// ];
 
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState("none");
@@ -48,7 +43,7 @@ const Header = () => {
                     </a>
                     <div className={styles.listNavbarWrapper}>
                         <ul className={styles.listNavbar}>
-                            {arrLinksUp.map((link) => (
+                            {arrLinks.map((link) => (
                                 <li key={link.to}>
                                     <Link to={link.to} className={styles.link}>
                                         {link.label}
