@@ -103,7 +103,6 @@
     display: flex;
     flex-direction: column;
 }
-
 .dropdownContent .dropdownLink {
     display: block;
 }
@@ -128,6 +127,9 @@
         color: #447ac6;
     }
 }
+.contacts {
+    display: none;
+}
 
 /* Responcive */
 @media (max-width: 1120px) {
@@ -151,27 +153,36 @@
         justify-content: center;
         padding-right: 0;
     }
-    .headerBottom {
-        padding: 32px 0;
-        flex-direction: column;
-        gap: 80px;
-    }
-    .dropdownButton {
-        padding-bottom: 1vh;
-    }
     .dropdownContent {
         display: none;
     }
     .dropdownLink {
         display: none;
     }
-
     .dropdownContentResponcive {
         display: block;
     }
-}
-@media (max-width: 424px) {
-    .logoHeaderPoPup {
+    .headerBottom {
+        display: none;
+        padding: 0;
+    }
+    .contacts {
+        padding: 32px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        color: #ffffff;
+        background-color: #013a3c;
+    }
+    .contactBtn {
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #ff851b;
+        text-decoration: none;
+    }
+    .logoHeader {
         max-width: 240px;
     }
 }
@@ -191,28 +202,16 @@
 //     flex-direction: row;
 //     gap: 32px;
 // }
-// // .headerButton {
-// //     padding: 16px 20px;
-// //     border: none;
-// //     border-radius: 8px;
-// //     background-color: #ff851b;
-// //     text-align: center;
-// //     text-decoration: none;
-// //     font-size: 14px;
-// //     color: #ffffff;
-// // }
 // .lanBtnWraper {
 //     display: flex;
 //     align-items: center;
 //     justify-content: center;
 // }
-
 // /* // popUp menu на кнопки */
 // .dropdown {
 //     position: relative;
 //     display: inline-block;
 // }
-
 // // .dropdownMenu {
 // //     display: flex;
 // //     flex-direction: column;
@@ -240,7 +239,6 @@
 //     background-color: #f0f0f0;
 //     border-radius: 4px;
 // }
-
 // /* // popUp mobile */
 // .headerMobile {
 //     display: none;
@@ -263,7 +261,6 @@
 //     text-align: center;
 //     gap: 24px;
 // }
-
 // .wrapperBottom {
 //     padding-bottom: 16px;
 //     display: flex;
@@ -273,7 +270,6 @@
 //     gap: 32px;
 //     border-bottom: 2px solid #ffbb29;
 // }
-
 // /* // popUpMenu */
 // .containerPopUp {
 //     display: flex;

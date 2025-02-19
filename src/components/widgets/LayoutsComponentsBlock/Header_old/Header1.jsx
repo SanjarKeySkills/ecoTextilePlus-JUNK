@@ -124,6 +124,19 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+                <div className={styles.contacts}>
+                    <p>
+                        Кыргызская Республика <br />
+                        г.Бишкек ул. Ахунбаева 169 <br />7 этаж, кабинет 1
+                    </p>
+                    <p>
+                        +996 552 702 740 <tr />
+                    </p>
+                    <a href="/">askatmazhitov@gmail.com</a>
+                    <a href="/contact" className={styles.contactBtn}>
+                        СВЯЗАТЬСЯ С НАМИ
+                    </a>
+                </div>
             </div>
         </div>
     );
@@ -138,20 +151,6 @@ const Header = () => {
 //             <div className={styles.arrowWrapper}>
 //                 <img src={arrowPopUp} alt="arrow" onClick={changeStyle} />
 //             </div>
-//             <p>
-//                 Кыргызская Республика <br />
-//                 <br /> г.Бишкек ул. Ахунбаева 169
-//                 <br />
-//                 <br /> 2 этаж, кабинет 1
-//             </p>
-//             <p>
-//                 +996 552 702 740
-//                 <tr />
-//             </p>
-//             <a href="#">askatmazhitov@gmail.com</a>
-//             <a className={styles.headerButton} href="/contact">
-//                 СВЯЗАТЬСЯ С НАМИ
-//             </a>
 //         </div>
 // Миссия компании ОсОО "Ду Кастомс" - внедрение экологически
 // чистых технологий по переработке отходов швейной отрасли.
