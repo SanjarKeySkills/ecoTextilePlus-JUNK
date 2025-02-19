@@ -1,15 +1,22 @@
+* {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
 .header {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
 }
-.headerUp {
+.headerContaner {
     width: 1440px;
+}
+
+// headerUp
+.headerUp {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,18 +26,10 @@
 .logoHeader {
     max-width: 320px;
 }
-.headerText {
-    text-align: center;
-    margin: 0;
-}
-.headerBottom {
-    width: 1440px;
+.listNavbarWrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
-    background-color: #013a3c;
 }
 .listNavbar {
     display: flex;
@@ -39,12 +38,30 @@
     justify-content: center;
     gap: 32px;
     list-style-type: none;
+    padding-inline-start: 0px;
 }
 .link {
-    color: #ffffff;
+    color: #013a3c;
     text-decoration: none;
 }
 
+// headerBottom
+.headerBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: #013a3c;
+}
+.headerText {
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+}
+
+// popUp
 .logoPopUp {
     display: none;
 }
@@ -59,29 +76,33 @@
     flex-direction: row;
     gap: 32px;
 }
-.headerButton {
-    padding: 16px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: #ff851b;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    color: #ffffff;
-}
+// .headerButton {
+//     padding: 16px 20px;
+//     border: none;
+//     border-radius: 8px;
+//     background-color: #ff851b;
+//     text-align: center;
+//     text-decoration: none;
+//     font-size: 14px;
+//     color: #ffffff;
+// }
 .lanBtnWraper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .lanRu {
     padding: 4px;
     border: none;
     font-size: 12px;
     text-align: center;
     text-decoration: none;
-    background-color: #3d9970;
+    background-color: #018e49;
     color: #ffffff;
+    &:hover {
+        background-color: #ff851b;
+    }
 }
 .lanEn {
     padding: 4px;
@@ -89,18 +110,23 @@
     font-size: 12px;
     text-align: center;
     text-decoration: none;
-    background-color: #ff851b;
+    background-color: #018e49;
     color: #ffffff;
+    &:hover {
+        background-color: #ff851b;
+    }
 }
-
 .lanKg {
     padding: 4px;
     border: none;
     font-size: 12px;
     text-align: center;
     text-decoration: none;
-    background-color: #3d9970;
+    background-color: #018e49;
     color: #ffffff;
+    &:hover {
+        background-color: #ff851b;
+    }
 }
 
 /* // popUp menu на кнопки */

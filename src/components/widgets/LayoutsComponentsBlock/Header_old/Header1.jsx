@@ -6,13 +6,19 @@ import burgerButton from "../../../../assets/ui/burgerBtn.svg";
 import arrowPopUp from "../../../../assets/ui/arrowBtn.svg";
 import { useState } from "react";
 
-const arrLinks = [
+const arrLinksUp = [
     { to: "/", label: "ГЛАВНАЯ" },
     { to: "/mission", label: "МИССИЯ" },
     { to: "/team", label: "КОМАНДА" },
     { to: "/gallery", label: "ГАЛЕРЕЯ" },
+    { to: "/gallery", label: "ВАКАНСИИ" },
     { to: "/contacts", label: "КОНТАКТЫ" },
 ];
+
+// const arrLinksButtom = [
+//     { to: "/gallery", label: "ГАЛЕРЕЯ" },
+//     { to: "/contacts", label: "КОНТАКТЫ" },
+// ];
 
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState("none");
@@ -31,37 +37,39 @@ const Header = () => {
 
     return (
         <div className={styles.header}>
-            <div className={styles.headerUp}>
-                <a href="/">
-                    <img src={logo} alt="main" className={styles.logoHeader} />
-                </a>
-                <p className={styles.headerText}>
-                    Снижая нагрузку на окружающую среду через эффективные
-                    решения по переработки тканей без сжигания, производим
-                    востребованный и ценный продукт.
-                </p>
-            </div>
-            <div className={styles.headerBottom}>
-                <ul className={styles.listNavbar}>
-                    {arrLinks.map((link) => (
-                        <li key={link.to}>
-                            <Link to={link.to} className={styles.link}>
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-                <div className={styles.lans}>
-                    <a href="/" className={styles.lanRu}>
-                        RU
+            <div className={styles.headerContaner}>
+                <div className={styles.headerUp}>
+                    <a href="/">
+                        <img
+                            src={logo}
+                            alt="main"
+                            className={styles.logoHeader}
+                        />
                     </a>
-                    <a href="/" className={styles.lanEn}>
-                        EN
-                    </a>
-                    <a href="/" className={styles.lanKg}>
-                        KG
-                    </a>
+                    <div className={styles.listNavbarWrapper}>
+                        <ul className={styles.listNavbar}>
+                            {arrLinksUp.map((link) => (
+                                <li key={link.to}>
+                                    <Link to={link.to} className={styles.link}>
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={styles.lans}>
+                        <a href="/" className={styles.lanRu}>
+                            RU
+                        </a>
+                        <a href="/" className={styles.lanEn}>
+                            EN
+                        </a>
+                        <a href="/" className={styles.lanKg}>
+                            KG
+                        </a>
+                    </div>
                 </div>
+                <div className={styles.headerBottom}></div>
             </div>
         </div>
     );
@@ -95,5 +103,9 @@ const Header = () => {
 // чистых технологий по переработке отходов швейной отрасли.
 //     </div>
 // </div>;
-
+//   <p className={styles.headerText}>
+//       Снижая нагрузку на окружающую среду через эффективные решения по
+//       переработки тканей без сжигания, производим востребованный и ценный
+//       продукт.
+//   </p>;
 export default Header;

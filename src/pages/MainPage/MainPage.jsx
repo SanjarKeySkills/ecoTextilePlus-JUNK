@@ -7,10 +7,10 @@ import GalleryBlock from "../../components/Widgets/GalleryBlock/GalleryBlock.jsx
 const MainPage = () => {
     return (
         <div>
-            <WelcomeBlock />
+            {/* <WelcomeBlock />
             <InfoTableBlock />
             <PartnersBlock />
-            <GalleryBlock />
+            <GalleryBlock /> */}
         </div>
     );
 };

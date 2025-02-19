@@ -13,7 +13,7 @@ const DefaultLayout = () => {
             <div className={styles.content}>
                 <Outlet />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
