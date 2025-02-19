@@ -83,7 +83,23 @@ const Header = () => {
                         </Link>
                         <div className={styles.dropdownContent}>
                             {arrForRecycle.map((link) => (
-                                <Link key={link.to} className={styles.navLink}>
+                                <Link
+                                    key={link.to}
+                                    className={styles.dropdownLink}>
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                    <div className={styles.dropdown}>
+                        <Link className={styles.dropdownButton}>
+                            МЫ ПРОИЗВОДИМ
+                        </Link>
+                        <div className={styles.dropdownContent}>
+                            {arrForProduct.map((link) => (
+                                <Link
+                                    key={link.to}
+                                    className={styles.dropdownLink}>
                                     {link.label}
                                 </Link>
                             ))}
