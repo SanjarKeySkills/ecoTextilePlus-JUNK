@@ -14,15 +14,29 @@ const arrLinks = [
     { to: "/gallery", label: "ВАКАНСИИ" },
     { to: "/contacts", label: "КОНТАКТЫ" },
 ];
+const arrLan = [
+    { to: "/", label: "KG" },
+    { to: "/", label: "EN" },
+    { to: "/", label: "RU" },
+];
+const arrForRecycle = [
+    { to: "/", label: "СИНТЕТИКА" },
+    { to: "/", label: "ХЛОПЧАТОБУМАЖНАЯ ТКАНЬ" },
+    { to: "/", label: "ПОЛИСТЕР" },
+    { to: "/", label: "ТРИКОТАЖ" },
+];
+const arrForProduct = [
+    { to: "/", label: "УТЕПЛИТЕЛИ" },
+    { to: "/", label: "ПАНЕЛИ УТЕПЛИТЕЛИ" },
+    { to: "/", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
+    { to: "/", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
+];
 
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState("none");
     const [isPndMenuOpen, setPndMenuOpen] = useState(false);
     const togglePopUp = () => {
         setOpenPopUp((prev) => (prev === "none" ? "block" : "none"));
-    };
-    const togglePndMenu = () => {
-        setPndMenuOpen((prev) => !prev);
     };
     const changeStyle = () => {
         if (isOpenPopUp === "none") {
@@ -53,18 +67,29 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className={styles.lans}>
-                        <a href="/" className={styles.lanRu}>
-                            RU
-                        </a>
-                        <a href="/" className={styles.lanEn}>
-                            EN
-                        </a>
-                        <a href="/" className={styles.lanKg}>
-                            KG
-                        </a>
+                        {arrLan.map((link) => (
+                            <div key={link.to}>
+                                <Link to={link.to} className={styles.lan}>
+                                    {link.label}
+                                </Link>
+                            </div>
+                        ))}
                     </div>
                 </div>
-                <div className={styles.headerBottom}></div>
+                <div className={styles.headerBottom}>
+                    <div className={styles.dropdown}>
+                        <Link className={styles.dropdownButton}>
+                            МЫ ПЕРЕРАБАТЫВАЕМ
+                        </Link>
+                        <div className={styles.dropdownContent}>
+                            {arrForRecycle.map((link) => (
+                                <Link key={link.to} className={styles.navLink}>
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
