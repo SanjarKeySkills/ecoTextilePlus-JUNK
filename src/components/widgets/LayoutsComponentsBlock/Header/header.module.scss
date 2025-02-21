@@ -5,138 +5,7 @@
     text-decoration: none;
     color: #ffffff;
 }
-.header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.headerContaner {
-    width: 100%;
-}
-// headerUp
-.headerUp {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-}
-.logoHeaderDesctop {
-    width: 320px;
-    padding-left: 16px;
-}
-.listNavbarWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.listNavbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    list-style-type: none;
-    padding-inline-start: 0px;
-    .link {
-        color: #013a3c;
-    }
-}
 
-.lans {
-    display: flex;
-    flex-direction: row;
-    padding-right: 16px;
-}
-.lan {
-    display: flex;
-    flex-direction: row;
-    padding: 4px;
-    border: none;
-    font-size: 12px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #018e49;
-    &:hover {
-        background-color: #ff851b;
-    }
-}
-// headerBottom
-.headerBottom {
-    width: 100%;
-    padding: 16px 0;
-    display: flex;
-    flex-direction: row;
-    gap: 240px;
-    justify-content: center;
-    align-items: center;
-    background-color: #013a3c;
-}
-// Dropdown
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdownButton {
-    cursor: pointer;
-}
-.dropdownContent {
-    padding: 8px;
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-}
-.dropdownContentResponcive {
-    display: none;
-}
-.listLinkResponcive {
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-.dropdownContent .dropdownLink {
-    display: block;
-}
-.dropdownContent .dropdownLink:hover {
-    background-color: #fff;
-}
-.dropdown:hover .dropdownContent {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.dropdown:hover .dropdownButton {
-    color: #ffffff;
-}
-.dropdownLink {
-    color: #013a3c;
-    font-style: normal;
-    text-decoration: none;
-    list-style-type: none;
-    &:hover {
-        text-decoration: none;
-        color: #447ac6;
-    }
-}
-
-// Header Mobile
-.headerMobile {
-    display: none;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 24px 0;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-}
 // Header popUp Mobile
 .containerPopUp {
     width: 100%;
@@ -171,65 +40,44 @@
 .arrowBtn {
     width: 48px;
 }
-// Top popUp responcive
-.listTopPopUp {
+.listNavbarPopUp {
+    padding-top: 16px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
 }
-// Bottom popUp responcive
-.wrapperBottomPopUp {
+.listLanPopUp {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 32px 0 88px;
-    gap: 24px;
-}
-.listBottomPopUp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap: 24px;
     padding-inline-start: 0;
 }
-// Bottom popUp lan-btn
-.lanBtnWraper {
-    display: flex;
-    align-items: center;
-}
 .lan {
-    padding: 4px;
     border: none;
     font-size: 12px;
-    text-align: center;
     font-weight: bold;
-    font-family: "Lato", sans-serif;
-    background-color: #5d6267;
-    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #ff851b;
     &:hover {
-        background-color: #c69214;
-        color: #ffffff;
+        background-color: #018e49;
     }
 }
-.lan:focus {
-    background-color: #c69214;
-    outline: none;
-}
 
-// Header desktop
+// Header Desctop menu
 .header {
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 7;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-decoration: none;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .headerContainer {
     max-width: 1440px;
     margin: 0 auto;
@@ -237,64 +85,99 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
-.wrapperHeaderDesktop {
-    padding-bottom: 16px;
+.headerUp {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+.logoHeaderDesctop {
+    width: 256px;
+    padding-left: 16px;
+}
+.listNavbarWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 32px;
-    border-bottom: 2px solid #ffbb29;
-    ul {
-        padding-inline-start: 0px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    .link {
+        color: #013a3c;
+        &:hover {
+            color: #447ac6;
+        }
     }
 }
-.wrapperNavbar {
+.lansDesctop {
+    padding-right: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 24px;
+    justify-content: center;
+    gap: 8px;
 }
 
-// Dropdown menu
+// Header bottom
+.headerBottom {
+    width: 100%;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 320px;
+    justify-content: center;
+    background-color: #013a3c;
+}
 .dropdown {
+    padding: 8px 0;
     position: relative;
     display: inline-block;
 }
 .dropdownButton {
-    color: #5d6267;
+    padding: 8px;
     text-decoration: none;
-    font-size: 16px;
     border: none;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #ff851b;
+    border-radius: 4px;
 }
 .dropdownContent {
+    padding: 4px;
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.849);
     border: 1px solid #ddd;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
-    padding: 8px;
 }
-.dropdownContent a:hover {
-    background-color: #fff;
+.dropdownContent .dropdownLink {
+    display: block;
+}
+.dropdownContent .dropdownLink:hover {
+    background-color: transparent;
 }
 .dropdown:hover .dropdownContent {
+    padding-top: 8px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 }
 .dropdown:hover .dropdownButton {
-    background-color: #fff;
+    background-color: #018e49;
+    color: #ffffff;
 }
-.navLink {
-    color: #5d6267;
-    font-style: normal;
+.dropdownLink {
+    color: #013a3c;
     text-decoration: none;
-    font-size: 16px;
     list-style-type: none;
     &:hover {
         text-decoration: none;
@@ -302,34 +185,21 @@
     }
 }
 
-// popUp menu на кнопки
-.heroButton {
-    padding: 4px 8px;
-    border: none;
-    border-radius: 4px;
-    background-color: #c69214;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
-    &:hover {
-        background: #ffbb29;
-        color: #fff;
-    }
-}
-// popUp responcive
-.listBottom {
-    display: flex;
+// Header Mobile
+.headerMobile {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 24px 0;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    gap: 24px;
-    li {
-        list-style-type: none;
-    }
+    background-color: #ffffff;
 }
 
-// Responcive
+// Responcive Mobile
 @media (max-width: 1120px) {
     .logoHeaderDesctop {
         display: none;
@@ -341,6 +211,9 @@
         padding: 24px 0;
         flex-direction: column;
         gap: 16px;
+        .lans {
+            display: none;
+        }
     }
     .headerTop {
         display: none;
@@ -357,10 +230,7 @@
     .burgerBtn {
         width: 48px;
     }
-    .lans {
-        display: block;
-    }
-    .lan {
+    .lansDesctop {
         display: none;
     }
 }
@@ -389,23 +259,4 @@
             width: 40px;
         }
     }
-
-    // .contacts {
-    //     display: none;
-    //     padding: 32px 0;
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     justify-content: center;
-    //     gap: 24px;
-    //     color: #ffffff;
-    //     background-color: #013a3c;
-    // }
-    // .contactBtn {
-    //     display: none;
-    //     padding: 8px;
-    //     border-radius: 8px;
-    //     background-color: #ff851b;
-    //     text-decoration: none;
-    // }
 }

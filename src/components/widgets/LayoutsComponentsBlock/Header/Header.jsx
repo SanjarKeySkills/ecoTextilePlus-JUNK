@@ -31,6 +31,7 @@ const arrForProduct = [
     { to: "/", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
 ];
 
+// Header popUp Mobile
 const HeaderMobileMenu = (props) => {
     const { isOpenPopUp, togglePopup } = props;
     const handlePopUpLinkClick = () => togglePopup(); // Закрытие адаптивного popUp меню
@@ -45,7 +46,7 @@ const HeaderMobileMenu = (props) => {
                     onClick={togglePopup}
                     className={styles.arrowBtn}
                 />
-                <ul className={styles.listTopPopUp}>
+                <ul className={styles.listNavbarPopUp}>
                     {arrLinks.map((link) => (
                         <li key={link.to}>
                             <Link
@@ -57,11 +58,9 @@ const HeaderMobileMenu = (props) => {
                         </li>
                     ))}
                 </ul>
-            </div>
-            <div className={styles.wrapperBottomPopUp}>
-                <ul className={styles.listBottomPopUp}>
+                <ul className={styles.listLanPopUp}>
                     {arrLan.map((link) => (
-                        <li key={link.to} className={styles.lans}>
+                        <li key={link.to}>
                             <Link
                                 to={link.to}
                                 onClick={handlePopUpLinkClick}
@@ -76,10 +75,11 @@ const HeaderMobileMenu = (props) => {
     );
 };
 
+// Header Desctop menu
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState(false);
     const togglePopup = () => setOpenPopUp(!isOpenPopUp);
-    const [isMenuOpen, setMenuOpen] = useState(false);
+    // const [isMenuOpen, setMenuOpen] = useState(false);
     return (
         <div className={styles.header}>
             <div className={styles.headerContaner}>
@@ -102,7 +102,7 @@ const Header = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className={styles.lans}>
+                    <div className={styles.lansDesctop}>
                         {arrLan.map((link) => (
                             <div key={link.to}>
                                 <Link to={link.to} className={styles.lan}>
@@ -112,10 +112,12 @@ const Header = () => {
                         ))}
                     </div>
                 </div>
+
+                {/* Header bottom */}
                 <div className={styles.headerBottom}>
                     <div className={styles.dropdown}>
                         <Link className={styles.dropdownButton}>
-                            МЫ ПЕРЕРАБАТЫВАЕМ
+                            ЧТО ПЕРЕРАБАТЫВАЕМ
                         </Link>
                         <div className={styles.dropdownContent}>
                             {arrForRecycle.map((link) => (
@@ -129,7 +131,7 @@ const Header = () => {
                     </div>
                     <div className={styles.dropdown}>
                         <Link className={styles.dropdownButton}>
-                            МЫ ПРОИЗВОДИМ
+                            ЧТО ПРОИЗВОДИМ
                         </Link>
                         <div className={styles.dropdownContent}>
                             {arrForProduct.map((link) => (
@@ -143,6 +145,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+
             {/* Mobile responcive menu */}
             <div className={styles.headerMobile}>
                 <Link to="/">
