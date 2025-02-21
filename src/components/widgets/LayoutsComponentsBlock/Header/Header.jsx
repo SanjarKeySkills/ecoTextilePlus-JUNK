@@ -82,7 +82,7 @@ const Header = () => {
     // const [isMenuOpen, setMenuOpen] = useState(false);
     return (
         <div className={styles.header}>
-            <div className={styles.headerContaner}>
+            <div className={styles.headerContainer}>
                 <div className={styles.headerUp}>
                     <Link to="/">
                         <img
