@@ -1,3 +1,4 @@
+/* Old hero */
 .hero {
     width: 100%;
     display: flex;
@@ -12,10 +13,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 24px;
 }
+
+.heroTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.heroTopImg {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .heroContainer {
-    padding: 24px;
     display: flex;
     flex-direction: row;
     align-items: center;

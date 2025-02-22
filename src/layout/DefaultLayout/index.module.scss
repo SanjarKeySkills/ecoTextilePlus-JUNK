@@ -4,20 +4,20 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
+    min-width: 100vh;
 }
-
 .content {
+    // padding: 20px;
     flex-grow: 1;
 }
-
 .loader {
     width: 48px;
     height: 48px;
     border: 5px solid #fff;
-    border-bottom-color: #ff3d00;
+    border-bottom-color: #013a3c;
     border-radius: 50%;
     box-sizing: border-box;
-    animation: rotation 1s linear infinite;
+    animation: rotation 2s linear infinite;
 }
 
 @keyframes rotation {

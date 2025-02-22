@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import styles from "./hero.module.css";
+import styles from "./hero.module.scss";
 import videoBg from "../../../assets/videoplayback.mp4";
 
 const Hero = () => {
@@ -11,6 +11,9 @@ const Hero = () => {
     return (
         <div className={styles.hero}>
             <div className={styles.heroWrapper}>
+                <div className={styles.heroTop}>
+                    <div className={styles.heroTopImg}></div>
+                </div>
                 <div className={styles.heroContainer}>
                     <div className={styles.heroContent}>
                         Основатель проекта - ОсОО "Ду Кастомс", которая является

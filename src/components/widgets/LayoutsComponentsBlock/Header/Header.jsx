@@ -79,7 +79,6 @@ const HeaderMobileMenu = (props) => {
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState(false);
     const togglePopup = () => setOpenPopUp(!isOpenPopUp);
-    // const [isMenuOpen, setMenuOpen] = useState(false);
     return (
         <div className={styles.header}>
             <div className={styles.headerContainer}>
