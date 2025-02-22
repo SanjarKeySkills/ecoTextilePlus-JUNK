@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./hero.module.scss";
-import imageTop from "../../../assets/bannerAnnoncement_kd.png";
+import imageTop from "../../../assets/gallery/heroTop.png";
 import videoBg from "../../../assets/videoplayback.mp4";
 
 const Hero = () => {
@@ -16,6 +16,9 @@ const Hero = () => {
                     <div className={styles.heroTopImg}>
                         <img src={imageTop} alt="heroTopImage" />
                     </div>
+                    {/* <div className={styles.heroTitle}>
+                        Welcome to ECOTEXTILEPLUS. <br /> Let's save the planet
+                    </div> */}
                 </div>
                 <div className={styles.heroContainer}>
                     <div className={styles.heroContent}>
