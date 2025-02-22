@@ -1,3 +1,11 @@
 .gallery {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    width: 1440px;
+    text-align: center;
     background-color: rgb(14, 51, 235);
 }

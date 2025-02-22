@@ -8,7 +8,7 @@ const ErrorPage = () => {
 
     return (
         <div className={styles.gallery}>
-            <div className={styles.wrapper}>987</div>
+            <div className={styles.wrapper}>Test</div>
         </div>
     );
 };

@@ -2,10 +2,12 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
-import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
+import { MissionPage } from "./pages/MissionPage/MissionPage.async.jsx";
 import { OurTeamPage } from "./pages/OurTeamPage/OurTeamPage.async.jsx";
 import { ContactPage } from "./pages/ContactPage/ContactPage.async.jsx";
 import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
+import { VacancyPage } from "./pages/VacancyPage/VacancyPage.async.jsx";
+import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 
 const App = () => {
     return (
@@ -20,6 +22,15 @@ const App = () => {
                             </Suspense>
                         }
                     />
+                    <Route
+                        path="/mission"
+                        element={
+                            <Suspense fallback={<ContentFallback />}>
+                                <MissionPage />
+                            </Suspense>
+                        }
+                    />
+
                     <Route
                         path="/team"
                         element={
@@ -42,6 +53,14 @@ const App = () => {
                         element={
                             <Suspense fallback={<ContentFallback />}>
                                 <GalleryPage />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/vacancy"
+                        element={
+                            <Suspense fallback={<ContentFallback />}>
+                                <VacancyPage />
                             </Suspense>
                         }
                     />

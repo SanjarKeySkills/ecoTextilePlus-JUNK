@@ -3,8 +3,8 @@ import styles from "./ourTeamBlock.module.scss";
 
 const OurTeamBlock = () => {
     return (
-        <div className={styles.ourTeam}>
-            <div>123</div>
+        <div className={styles.ourTeamBlock}>
+            <div className={styles.teamBlockContainer}>Test</div>
         </div>
     );
 };

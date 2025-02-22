@@ -10,7 +10,7 @@ const arrLinks = [
     { to: "/mission", label: "МИССИЯ" },
     { to: "/team", label: "КОМАНДА" },
     { to: "/gallery", label: "ГАЛЕРЕЯ" },
-    { to: "/gallery", label: "ВАКАНСИИ" },
+    { to: "/vacancy", label: "ВАКАНСИИ" },
     { to: "/contacts", label: "КОНТАКТЫ" },
 ];
 const arrLan = [
