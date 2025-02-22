@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./hero.module.scss";
+import imageTop from "../../../assets/bannerAnnoncement_kd.png";
 import videoBg from "../../../assets/videoplayback.mp4";
 
 const Hero = () => {
@@ -12,7 +13,9 @@ const Hero = () => {
         <div className={styles.hero}>
             <div className={styles.heroWrapper}>
                 <div className={styles.heroTop}>
-                    <div className={styles.heroTopImg}></div>
+                    <div className={styles.heroTopImg}>
+                        <img src={imageTop} alt="heroTopImage" />
+                    </div>
                 </div>
                 <div className={styles.heroContainer}>
                     <div className={styles.heroContent}>
