@@ -16,9 +16,10 @@ const Hero = () => {
                     <div className={styles.heroTopImg}>
                         <img src={imageTop} alt="heroTopImage" />
                     </div>
-                    {/* <div className={styles.heroTitle}>
-                        Welcome to ECOTEXTILEPLUS. <br /> Let's save the planet
-                    </div> */}
+                    <div className={styles.heroTitle}>
+                        Добро пожаловать в "ECOTEXTILEPLUS" <br />
+                        Переработка отходов швейной отрасли
+                    </div>
                 </div>
                 <div className={styles.heroContainer}>
                     <div className={styles.heroContent}>
