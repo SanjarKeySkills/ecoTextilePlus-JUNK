@@ -8,6 +8,7 @@ import { ContactPage } from "./pages/ContactPage/ContactPage.async.jsx";
 import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
 import { VacancyPage } from "./pages/VacancyPage/VacancyPage.async.jsx";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
+import { TeamMemberPage } from "./pages/TeamMemberPage/TeamMemberPage.async.jsx";
 
 const App = () => {
     return (
@@ -30,7 +31,6 @@ const App = () => {
                             </Suspense>
                         }
                     />
-
                     <Route
                         path="/team"
                         element={
@@ -39,6 +39,17 @@ const App = () => {
                             </Suspense>
                         }
                     />
+                    <Route
+                        path="/member/:type/:id"
+                        // в таком виде to useParams будет приходить строках в виде
+                        // ключа с теми значениями
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <TeamMemberPage />
+                            </Suspense>
+                        }
+                    />
+
                     <Route
                         path="/contacts"
                         element={
