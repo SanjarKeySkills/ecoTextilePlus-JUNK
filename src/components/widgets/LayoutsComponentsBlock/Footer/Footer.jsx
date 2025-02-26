@@ -36,7 +36,7 @@ const arrSocial = [
         label: instLogo,
     },
     {
-        to: "https://www.instagram.com/invoicepluss?igsh=MWc2c2p4cnd3eW43Nw==",
+        to: "https://www.facebook.com",
         label: facebookLogo,
     },
 ];
