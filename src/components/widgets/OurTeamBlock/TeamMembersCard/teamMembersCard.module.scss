@@ -1,41 +1,33 @@
-.membersItemWrapper {
-    h4,
+.teamMemberCards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.memberCardsWrapper {
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.membersItemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+        font-size: 24px;
+        color: #013a3c;
+    }
     p {
-        color: black;
-        font-size: 16px;
+        padding: 0 72px;
+        font-size: 24px;
+        color: #013a3c;
+        text-align: justify;
     }
 }
 
-.ourTeamBlock {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.teamBlockContainer {
-    width: 1440px;
-    text-align: center;
-    background-color: aqua;
-    color: black;
-}
-
-.membersItem {
-    width: 100%;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-}
-
-.membersItemWrapper {
-    max-width: 1024px;
-    padding: 16px 0;
-    margin: 0 auto;
-    font-size: 24px;
-}
-
+// Responcive
 @media (max-width: 1024px) {
     .membersItem {
         padding: 48px 32px;

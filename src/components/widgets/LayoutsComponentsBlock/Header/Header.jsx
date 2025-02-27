@@ -36,40 +36,42 @@ const HeaderMobileMenu = (props) => {
     const { isOpenPopUp, togglePopup } = props;
     const handlePopUpLinkClick = () => togglePopup(); // Закрытие адаптивного popUp меню
     return (
-        <div
-            className={styles.containerPopUp}
-            style={{ display: isOpenPopUp ? "block" : "none" }}>
-            <div className={styles.wrapperPopUp}>
-                <img
-                    src={arrowPopUp}
-                    alt="arrow"
-                    onClick={togglePopup}
-                    className={styles.arrowBtn}
-                />
-                <ul className={styles.listNavbarPopUp}>
-                    {arrLinks.map((link) => (
-                        <li key={link.to}>
-                            <Link
-                                to={link.to}
-                                onClick={handlePopUpLinkClick}
-                                className={styles.link}>
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-                <ul className={styles.listLanPopUp}>
-                    {arrLan.map((link) => (
-                        <li key={link.to}>
-                            <Link
-                                to={link.to}
-                                onClick={handlePopUpLinkClick}
-                                className={styles.lan}>
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+        <div className={styles.headerPopUp}>
+            <div
+                className={styles.containerPopUp}
+                style={{ display: isOpenPopUp ? "block" : "none" }}>
+                <div className={styles.wrapperPopUp}>
+                    <img
+                        src={arrowPopUp}
+                        alt="arrow"
+                        onClick={togglePopup}
+                        className={styles.arrowBtn}
+                    />
+                    <ul className={styles.listNavbarPopUp}>
+                        {arrLinks.map((link) => (
+                            <li key={link.to}>
+                                <Link
+                                    to={link.to}
+                                    onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    {link.label}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul className={styles.listLanPopUp}>
+                        {arrLan.map((link) => (
+                            <li key={link.to}>
+                                <Link
+                                    to={link.to}
+                                    onClick={handlePopUpLinkClick}
+                                    className={styles.lan}>
+                                    {link.label}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
         </div>
     );
@@ -170,17 +172,4 @@ const Header = () => {
     );
 };
 
-//  <div className={styles.contacts}>
-//      <p>
-//          Кыргызская Республика <br />
-//          г.Бишкек ул. Ахунбаева 169 <br />7 этаж, кабинет 1
-//      </p>
-//      <p>
-//          +996 552 702 740 <tr />
-//      </p>
-//      <a href="/">askatmazhitov@gmail.com</a>
-//      <a href="/contact" className={styles.contactBtn}>
-//          СВЯЗАТЬСЯ С НАМИ
-//      </a>
-//  </div>;
 export default Header;
