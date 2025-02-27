@@ -1,3 +1,10 @@
+* {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #013a3c;
+}
 .headerPopUp {
     display: none;
     width: 100%;
@@ -5,11 +12,81 @@
 .containerPopUp {
     width: 1440px;
 }
+// Header desctop
+.header {
+    width: 100%;
+}
+.headerContainer {
+    max-width: 1440px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+// Header desctop up
+.headerUp {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        max-width: 320px;
+        padding: 8px 0;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+    .link {
+        text-decoration: none;
+        &:hover {
+            color: #447ac6;
+        }
+    }
+    .lansDesctop {
+        padding-left: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        div {
+            list-style-type: none;
+            padding-inline-start: 0;
+        }
+        .lan {
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 4px;
+            background-color: #ff851b;
+            &:hover {
+                background-color: #018e49;
+            }
+        }
+    }
+}
+
+// Header desctop bottom
+.headerBottom {
+    display: none;
+    flex-direction: row;
+}
+.dropdownContent {
+    display: flex;
+    flex-direction: column;
+}
+
+// Header mobile
 .headerMobile {
     display: none;
     flex-direction: row;
     justify-content: space-between;
     padding: 16px;
+    background-color: aqua;
 }
 // Header popUp Mobile
 .headerPopUp {
@@ -25,14 +102,7 @@
     }
 }
 
-// * {
-//     font-family: "Lato", sans-serif;
-//     font-weight: 400;
-//     font-size: 16px;
-//     text-decoration: none;
-//     color: #013a3c;
-// }
-
+// -----------------------------------------
 // .headerPopUp {
 //     width: 100%;
 // }
@@ -78,6 +148,7 @@
 //     align-items: center;
 //     gap: 32px;
 // }
+
 // .listLanPopUp {
 //     display: flex;
 //     flex-direction: row;
@@ -85,18 +156,6 @@
 //     justify-content: center;
 //     gap: 24px;
 //     padding-inline-start: 0;
-// }
-// .lan {
-//     border: none;
-//     font-size: 12px;
-//     font-weight: bold;
-//     text-align: center;
-//     padding: 8px;
-//     border-radius: 4px;
-//     background-color: #ff851b;
-//     &:hover {
-//         background-color: #018e49;
-//     }
 // }
 
 // // Header Desctop menu
@@ -111,54 +170,8 @@
 //     align-items: center;
 //     justify-content: center;
 // }
-// .headerContainer {
-//     width: 1440px;
-//     padding: 24px 24px 0;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-// }
-// .headerUp {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: space-between;
-// }
-// .logoHeaderDesctop {
-//     max-width: 256px;
-//     padding-left: 16px;
-// }
-// .listNavbarWrapper {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// .listNavbar {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 32px;
-//     list-style-type: none;
-//     padding-inline-start: 0px;
-//     .link {
-//         color: #013a3c;
-//         &:hover {
-//             color: #447ac6;
-//         }
-//     }
-// }
-// .lansDesctop {
-//     padding-right: 16px;
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 8px;
-// }
 
-// // Header bottom
+// Header bottom
 // .headerBottom {
 //     width: 100%;
 //     padding: 16px 0;

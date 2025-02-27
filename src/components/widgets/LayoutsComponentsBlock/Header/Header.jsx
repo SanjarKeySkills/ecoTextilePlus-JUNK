@@ -14,8 +14,8 @@ const arrLinks = [
     { to: "/contacts", label: "КОНТАКТЫ" },
 ];
 const arrLan = [
-    { to: "/", label: "KG" },
-    { to: "/", label: "EN" },
+    { to: "/kg", label: "KG" },
+    { to: "/en", label: "EN" },
     { to: "/", label: "RU" },
 ];
 const arrForRecycle = [
@@ -86,14 +86,10 @@ const Header = () => {
             <div className={styles.headerContainer}>
                 <div className={styles.headerUp}>
                     <Link to="/">
-                        <img
-                            src={logo}
-                            alt="main"
-                            className={styles.logoHeaderDesctop}
-                        />
+                        <img src={logo} alt="main" />
                     </Link>
                     <div className={styles.listNavbarWrapper}>
-                        <ul className={styles.listNavbar}>
+                        <ul>
                             {arrLinks.map((link) => (
                                 <li key={link.to}>
                                     <Link to={link.to} className={styles.link}>
@@ -105,7 +101,7 @@ const Header = () => {
                     </div>
                     <div className={styles.lansDesctop}>
                         {arrLan.map((link) => (
-                            <div key={link.to}>
+                            <div>
                                 <Link to={link.to} className={styles.lan}>
                                     {link.label}
                                 </Link>
