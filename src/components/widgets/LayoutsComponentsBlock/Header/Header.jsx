@@ -31,6 +31,94 @@ const arrForProduct = [
     { to: "/", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
 ];
 
+// Header Desctop menu
+const Header = () => {
+    const [isOpenPopUp, setOpenPopUp] = useState(false);
+    const togglePopup = () => setOpenPopUp(!isOpenPopUp);
+    return (
+        <div className={styles.header}>
+            <div className={styles.headerContainer}>
+                <div className={styles.headerUp}>
+                    <Link to="/">
+                        <img src={logo} alt="main" />
+                    </Link>
+                    <div className={styles.listNavbarWrapper}>
+                        <ul>
+                            {arrLinks.map((link) => (
+                                <li key={link.to}>
+                                    <Link to={link.to} className={styles.link}>
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={styles.lansDesctop}>
+                        {arrLan.map((link) => (
+                            <div>
+                                <Link to={link.to} className={styles.lan}>
+                                    {link.label}
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Header bottom */}
+                <div className={styles.headerBottom}>
+                    <div className={styles.dropdown}>
+                        <Link className={styles.dropdownButton}>
+                            ЧТО ПЕРЕРАБАТЫВАЕМ
+                        </Link>
+
+                        <div className={styles.dropdownContent}>
+                            {arrForRecycle.map((link) => (
+                                <Link
+                                    key={link.to}
+                                    className={styles.dropdownLink}>
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                    <div className={styles.dropdown}>
+                        <Link className={styles.dropdownButton}>
+                            ЧТО ПРОИЗВОДИМ
+                        </Link>
+                        <div className={styles.dropdownContent}>
+                            {arrForProduct.map((link) => (
+                                <Link
+                                    key={link.to}
+                                    className={styles.dropdownLink}>
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Mobile responcive menu */}
+            <div className={styles.headerMobile}>
+                <Link to="/">
+                    <img src={logo} alt="main" onClick={togglePopup} />
+                </Link>
+                <img
+                    src={burgerButton}
+                    alt="burger"
+                    onClick={togglePopup}
+                    className={styles.burgerBtn}
+                />
+                <HeaderMobileMenu
+                    isOpenPopUp={isOpenPopUp}
+                    togglePopup={togglePopup}
+                />
+            </div>
+        </div>
+    );
+};
+export default Header;
+
 // Header popUp Mobile
 const HeaderMobileMenu = (props) => {
     const { isOpenPopUp, togglePopup } = props;
@@ -76,96 +164,3 @@ const HeaderMobileMenu = (props) => {
         </div>
     );
 };
-
-// Header Desctop menu
-const Header = () => {
-    const [isOpenPopUp, setOpenPopUp] = useState(false);
-    const togglePopup = () => setOpenPopUp(!isOpenPopUp);
-    return (
-        <div className={styles.header}>
-            <div className={styles.headerContainer}>
-                <div className={styles.headerUp}>
-                    <Link to="/">
-                        <img src={logo} alt="main" />
-                    </Link>
-                    <div className={styles.listNavbarWrapper}>
-                        <ul>
-                            {arrLinks.map((link) => (
-                                <li key={link.to}>
-                                    <Link to={link.to} className={styles.link}>
-                                        {link.label}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className={styles.lansDesctop}>
-                        {arrLan.map((link) => (
-                            <div>
-                                <Link to={link.to} className={styles.lan}>
-                                    {link.label}
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Header bottom */}
-                <div className={styles.headerBottom}>
-                    <div className={styles.dropdown}>
-                        <Link className={styles.dropdownButton}>
-                            ЧТО ПЕРЕРАБАТЫВАЕМ
-                        </Link>
-                        <div className={styles.dropdownContent}>
-                            {arrForRecycle.map((link) => (
-                                <Link
-                                    key={link.to}
-                                    className={styles.dropdownLink}>
-                                    {link.label}
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
-                    <div className={styles.dropdown}>
-                        <Link className={styles.dropdownButton}>
-                            ЧТО ПРОИЗВОДИМ
-                        </Link>
-                        <div className={styles.dropdownContent}>
-                            {arrForProduct.map((link) => (
-                                <Link
-                                    key={link.to}
-                                    className={styles.dropdownLink}>
-                                    {link.label}
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Mobile responcive menu */}
-            <div className={styles.headerMobile}>
-                <Link to="/">
-                    <img
-                        src={logo}
-                        alt="main"
-                        onClick={togglePopup}
-                        className={styles.logoHeaderMobile}
-                    />
-                </Link>
-                <img
-                    src={burgerButton}
-                    alt="burger"
-                    onClick={togglePopup}
-                    className={styles.burgerBtn}
-                />
-                <HeaderMobileMenu
-                    isOpenPopUp={isOpenPopUp}
-                    togglePopup={togglePopup}
-                />
-            </div>
-        </div>
-    );
-};
-
-export default Header;

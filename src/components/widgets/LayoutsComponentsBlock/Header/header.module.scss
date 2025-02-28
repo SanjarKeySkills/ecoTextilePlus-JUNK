@@ -5,13 +5,6 @@
     text-decoration: none;
     color: #013a3c;
 }
-.headerPopUp {
-    display: none;
-    width: 100%;
-}
-.containerPopUp {
-    width: 1440px;
-}
 // Header desctop
 .header {
     width: 100%;
@@ -33,12 +26,12 @@
     align-items: center;
     img {
         max-width: 320px;
-        padding: 8px 0;
+        padding: 8px 8px 8px 0;
     }
     ul {
         display: flex;
         flex-direction: row;
-        gap: 40px;
+        gap: 32px;
         list-style-type: none;
         padding-inline-start: 0;
     }
@@ -49,10 +42,10 @@
         }
     }
     .lansDesctop {
-        padding-left: 16px;
+        padding-left: 8px;
         display: flex;
         flex-direction: row;
-        gap: 8px;
+        gap: 4px;
         div {
             list-style-type: none;
             padding-inline-start: 0;
@@ -69,30 +62,102 @@
         }
     }
 }
-
 // Header desctop bottom
 .headerBottom {
-    display: none;
+    width: 100%;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
     flex-direction: row;
+    gap: 160px;
+    background-color: #013a3c;
+}
+// dropdown button
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownButton {
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff851b;
 }
 .dropdownContent {
+    padding: 4px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    // z-index: 10;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.dropdownLink {
+    color: #013a3c;
+    text-decoration: none;
+    list-style-type: none;
+    &:hover {
+        text-decoration: none;
+        color: #447ac6;
+    }
+}
+.dropdownContent .dropdownLink {
+    display: block;
+}
+.dropdownContent .dropdownLink:hover {
+    background-color: transparent;
+}
+.dropdown:hover .dropdownContent {
+    padding-top: 8px;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+}
+.dropdown:hover .dropdownButton {
+    background-color: #018e49;
+    color: #ffffff;
 }
 
+// ----------------------------------
 // Header mobile
 .headerMobile {
     display: none;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     padding: 16px;
-    background-color: aqua;
+    background-color: rgb(255, 251, 0);
+    img {
+        max-width: 248px;
+        padding-right: 8px;
+    }
+    .burgerBtn {
+        max-width: 48px;
+    }
 }
-// Header popUp Mobile
-.headerPopUp {
+
+// -----------------------------------
+
+.containerPopUp {
     width: 100%;
 }
 
+// Responcive
+@media (max-width: 1140px) {
+    .headerUp {
+        img {
+            max-width: 296px;
+            padding: 8px 8px 4px 0;
+        }
+        ul {
+            gap: 24px;
+        }
+    }
+}
 @media (max-width: 1120px) {
     .headerContainer {
         display: none;
@@ -100,13 +165,16 @@
     .headerMobile {
         display: flex;
     }
+    .headerPopUp {
+        display: flex;
+        width: 100%;
+        .arrowBtn {
+            width: 56px;
+        }
+    }
 }
 
-// -----------------------------------------
-// .headerPopUp {
-//     width: 100%;
-// }
-
+// ----------------------
 // .containerPopUp {
 //     max-width: 1440px;
 //     height: 100vh;
@@ -137,9 +205,7 @@
 //     flex-direction: column;
 //     padding: 24px;
 // }
-// .arrowBtn {
-//     width: 48px;
-// }
+
 // .listNavbarPopUp {
 //     padding-top: 16px;
 //     display: flex;
@@ -157,8 +223,9 @@
 //     gap: 24px;
 //     padding-inline-start: 0;
 // }
+// -----------------------------
 
-// // Header Desctop menu
+// Header Desctop menu
 // .header {
 //     width: 100%;
 //     position: fixed;
@@ -171,79 +238,6 @@
 //     justify-content: center;
 // }
 
-// Header bottom
-// .headerBottom {
-//     width: 100%;
-//     padding: 16px 0;
-//     display: flex;
-//     flex-direction: row;
-//     gap: 320px;
-//     justify-content: center;
-//     background-color: #013a3c;
-// }
-// .dropdown {
-//     // width: 1440px;
-//     padding: 8px 0;
-//     // position: relative;
-//     // display: inline-block;
-// }
-// .dropdownButton {
-//     padding: 8px;
-//     text-decoration: none;
-//     border: none;
-//     cursor: pointer;
-//     background-color: #ff851b;
-//     border-radius: 4px;
-// }
-// .dropdownContent {
-//     padding: 4px;
-//     display: none;
-//     position: absolute;
-//     background-color: rgba(255, 255, 255, 0.849);
-//     border: 1px solid #ddd;
-//     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-//     z-index: 10;
-// }
-// .dropdownContent .dropdownLink {
-//     display: block;
-// }
-// .dropdownContent .dropdownLink:hover {
-//     background-color: transparent;
-// }
-// .dropdown:hover .dropdownContent {
-//     padding-top: 8px;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 24px;
-// }
-// .dropdown:hover .dropdownButton {
-//     background-color: #018e49;
-//     color: #ffffff;
-// }
-// .dropdownLink {
-//     color: #013a3c;
-//     text-decoration: none;
-//     list-style-type: none;
-//     &:hover {
-//         text-decoration: none;
-//         color: #447ac6;
-//     }
-// }
-
-// // Header Mobile
-// .headerMobile {
-//     display: none;
-//     max-width: 1440px;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     padding: 24px 0;
-//     justify-content: space-between;
-//     align-items: center;
-//     flex-direction: row;
-// }
-
-// // Responcive Mobile
 // @media (max-width: 1120px) {
 //     .logoHeaderDesctop {
 //         display: none;
@@ -265,12 +259,7 @@
 //     .headerBottom {
 //         display: none;
 //     }
-//     .headerMobile {
-//         display: flex;
-//     }
-//     .logoHeaderMobile {
-//         width: 240px;
-//     }
+
 //     .burgerBtn {
 //         width: 48px;
 //     }
@@ -295,12 +284,3 @@
 //         justify-content: center;
 //         padding-right: 0;
 //     }
-//     @media (max-width: 424px) {
-//         .logoHeaderMobile {
-//             width: 224px;
-//         }
-//         .burgerBtn {
-//             width: 40px;
-//         }
-//     }
-// }
