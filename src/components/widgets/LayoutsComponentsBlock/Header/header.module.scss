@@ -84,13 +84,13 @@
     background-color: #ff851b;
 }
 .dropdownContent {
+    display: none;
     padding: 4px;
     position: absolute;
-    display: none;
     flex-direction: column;
     border: 1px solid #ddd;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    // z-index: 10;
+    z-index: 10;
     background-color: rgba(255, 255, 255, 0.95);
 }
 .dropdownLink {
@@ -128,7 +128,6 @@
     top: 0;
     left: 0;
     padding: 24px 0px;
-    background-color: rgb(255, 251, 0);
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
@@ -145,7 +144,7 @@
 // Header popUp
 .containerPopUp {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -157,11 +156,11 @@
     background-color: #013a3c;
 }
 .wrapperPopUp {
-    padding: 24px;
+    padding: 16px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     img {
         max-width: 56px;
     }
@@ -170,6 +169,7 @@
     }
     li {
         list-style-type: none;
+        padding-bottom: 16px;
     }
     .link {
         color: #fff;
@@ -177,6 +177,53 @@
             color: #447ac6;
         }
     }
+    .listLanPopUp {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        .lan {
+            font-size: 12px;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 4px;
+            background-color: #ff851b;
+            &:hover {
+                background-color: #018e49;
+            }
+        }
+    }
+}
+.popUpListContainer {
+    width: 100%;
+    height: 40vh;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    background-color: #fff;
+    justify-content: center;
+}
+.popUpListWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    p {
+        color: #013a3c;
+        font-weight: 700;
+    }
+    .link {
+        color: #013a3c;
+        &:hover {
+            color: #447ac6;
+        }
+    }
+}
+.popUpList {
+    display: flex;
+    flex-direction: column;
 }
 
 // -----------------------------------
@@ -199,10 +246,37 @@
     .headerMobile {
         display: flex;
     }
-    // .headerPopUp {
-    //     display: flex;
-    //     width: 100%;
-    // }
+}
+@media (max-width: 608px) {
+    .popUpListWrapper {
+        align-items: center;
+        justify-content: center;
+        p {
+            margin-block-start: 0;
+            margin-block-end: 4px;
+        }
+    }
+
+    img {
+        max-width: 48px;
+    }
+    .wrapperPopUp {
+        li {
+            padding-bottom: 8px;
+        }
+    }
+    .popUpListContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+    }
+    .popUpList {
+        align-items: center;
+        .link {
+            font-size: 14px;
+        }
+    }
 }
 
 // ----------------------

@@ -26,9 +26,9 @@ const arrForRecycle = [
 ];
 const arrForProduct = [
     { to: "/", label: "УТЕПЛИТЕЛИ" },
-    { to: "/", label: "ПАНЕЛИ УТЕПЛИТЕЛИ" },
-    { to: "/", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
-    { to: "/", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
+    { to: "/", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
+    { to: "/", label: "СТРОЙ ПЕРЧАТКИ" },
+    { to: "/", label: "ТЕХ. ТКАНИ" },
 ];
 
 // Header Desctop menu
@@ -154,6 +154,28 @@ const HeaderMobileMenu = (props) => {
                         </li>
                     ))}
                 </ul>
+            </div>
+            <div className={styles.popUpListContainer}>
+                <div className={styles.popUpListWrapper}>
+                    <p>ЧТО ПЕРЕРАБАТЫВАЕМ</p>
+                    <div className={styles.popUpList}>
+                        {arrForRecycle.map((link) => (
+                            <Link key={link.to} className={styles.link}>
+                                {link.label}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+                <div className={styles.popUpListWrapper}>
+                    <p>ЧТО ПРОИЗВОДИМ</p>
+                    <div className={styles.popUpList}>
+                        {arrForProduct.map((link) => (
+                            <Link key={link.to} className={styles.link}>
+                                {link.label}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );
