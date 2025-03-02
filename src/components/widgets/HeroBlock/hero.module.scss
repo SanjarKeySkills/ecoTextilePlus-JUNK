@@ -2,12 +2,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: "Lato", sans-serif;
     font-weight: 500;
     font-size: 24px;
 }
 .heroWrapper {
-    max-width: 1440px;
+    width: 1440px;
+    padding: 0 24px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,21 +25,24 @@
     padding-bottom: 24px;
 }
 .heroTopImg {
-    max-width: 100%;
     margin: 0 auto;
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
 }
 .heroTitle {
-    padding: 32px;
+    padding: 24px;
     width: 80%;
     color: #013a3c;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
     position: absolute;
-    top: 40;
+    top: 50;
     left: 40;
     z-index: 4;
-    background: linear-gradient(0.25turn, #ffffff20, #ffffff, #ffffff20);
+    background: linear-gradient(0.25turn, #ffffff00, #ffffff, #ffffff00);
 }
 
 // HeroBottom
@@ -73,31 +78,36 @@ p {
     padding: 0 24px;
 }
 
-video {
-    max-width: 1024px;
-    object-fit: cover;
-    border-radius: 8px;
-    text-align: center;
-}
+// video {
+//     max-width: 1024px;
+//     object-fit: cover;
+//     border-radius: 8px;
+//     text-align: center;
+// }
 
 @media (max-width: 1324px) {
-    .heroWrapper {
-        max-width: 880px;
-        padding: 0 16px;
-    }
-    video {
-        max-width: 400px;
-    }
+    // video {
+    //     max-width: 400px;
+    // }
     .heroManifest {
         max-width: 100%;
         padding: 8px;
     }
 }
-
-@media (max-width: 1024px) {
-    video {
-        max-width: 320px;
+@media (max-width: 1120px) {
+    .heroTopImg {
+        margin: 116px auto;
     }
+    .heroTitle {
+        padding: 16px;
+        width: 64%;
+        font-size: 24px;
+    }
+}
+@media (max-width: 1024px) {
+    // video {
+    //     max-width: 320px;
+    // }
 }
 
 @media (max-width: 880px) {
@@ -109,11 +119,19 @@ video {
         margin-top: 16px;
         padding: 8px;
     }
-    .heroWrapper {
-        max-width: 560px;
+}
+
+@media (max-width: 688px) {
+    .heroContainer {
+        flex-direction: column;
         padding: 8px;
     }
-    .heroManifest {
+    .heroContent {
+        margin-top: 16px;
+        padding: 8px;
+    }
+    .heroTitle {
+        padding: 8px;
         font-size: 16px;
     }
 }
@@ -121,6 +139,14 @@ video {
 @media (max-width: 768px) {
     .heroContainer {
         margin-top: 160px;
+    }
+}
+
+@media (max-width: 608px) {
+    .heroTitle {
+        padding: 8px;
+        width: 64%;
+        font-size: 20px;
     }
 }
 

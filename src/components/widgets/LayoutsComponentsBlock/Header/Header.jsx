@@ -19,7 +19,7 @@ const arrLan = [
     { to: "/", label: "RU" },
 ];
 const arrForRecycle = [
-    { to: "/", label: "СИНТЕТИКА" },
+    { to: "/", label: "СИНТЕТИЧЕСКИЕ ТКАНИ" },
     { to: "/", label: "ХЛОПЧАТОБУМАЖНАЯ ТКАНЬ" },
     { to: "/", label: "ПОЛИСТЕР" },
     { to: "/", label: "ТРИКОТАЖ" },
@@ -27,8 +27,8 @@ const arrForRecycle = [
 const arrForProduct = [
     { to: "/", label: "УТЕПЛИТЕЛИ" },
     { to: "/", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
-    { to: "/", label: "СТРОЙ ПЕРЧАТКИ" },
-    { to: "/", label: "ТЕХ. ТКАНИ" },
+    { to: "/", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
+    { to: "/", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
 ];
 
 // Header Desctop menu
