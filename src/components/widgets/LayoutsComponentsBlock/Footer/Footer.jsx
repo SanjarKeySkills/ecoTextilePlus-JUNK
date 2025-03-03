@@ -14,21 +14,21 @@ const arrLinks = [
     { to: "/contacts", label: "КОНТАКТЫ" },
 ];
 const arrLan = [
-    { to: "/", label: "KG" },
-    { to: "/", label: "EN" },
-    { to: "/", label: "RU" },
+    { to: "#", label: "KG" },
+    { to: "#", label: "EN" },
+    { to: "#", label: "RU" },
 ];
 const arrForRecycle = [
-    { to: "/", label: "СИНТЕТИКА" },
-    { to: "/", label: "ХБ ТКАНЬ" },
-    { to: "/", label: "ПОЛИСТЕР" },
-    { to: "/", label: "ТРИКОТАЖ" },
+    { to: "#", label: "СИНТЕТИКА" },
+    { to: "#", label: "ХБ ТКАНЬ" },
+    { to: "#", label: "ПОЛИСТЕР" },
+    { to: "#", label: "ТРИКОТАЖ" },
 ];
 const arrForProduct = [
-    { to: "/", label: "УТЕПЛИТЕЛИ" },
-    { to: "/", label: "ПАНЕЛИ УТЕПЛИТЕЛИ" },
-    { to: "/", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
-    { to: "/", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
+    { to: "#", label: "УТЕПЛИТЕЛИ" },
+    { to: "#", label: "ПАНЕЛИ УТЕПЛИТЕЛИ" },
+    { to: "#", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
+    { to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
 ];
 const arrSocial = [
     {

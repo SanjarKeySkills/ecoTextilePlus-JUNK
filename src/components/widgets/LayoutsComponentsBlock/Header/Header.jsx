@@ -14,21 +14,21 @@ const arrLinks = [
     { to: "/contacts", label: "КОНТАКТЫ" },
 ];
 const arrLan = [
-    { to: "/kg", label: "KG" },
-    { to: "/en", label: "EN" },
-    { to: "/", label: "RU" },
+    { id: 1, to: "#", label: "KG" },
+    { id: 2, to: "#", label: "EN" },
+    { id: 3, to: "#", label: "RU" },
 ];
 const arrForRecycle = [
-    { to: "/", label: "СИНТЕТИЧЕСКИЕ ТКАНИ" },
-    { to: "/", label: "ХЛОПЧАТОБУМАЖНАЯ ТКАНЬ" },
-    { to: "/", label: "ПОЛИСТЕР" },
-    { to: "/", label: "ТРИКОТАЖ" },
+    { to: "#", label: "СИНТЕТИЧЕСКИЕ ТКАНИ" },
+    { to: "#", label: "ХЛОПЧАТОБУМАЖНАЯ ТКАНЬ" },
+    { to: "#", label: "ПОЛИСТЕР" },
+    { to: "#", label: "ТРИКОТАЖ" },
 ];
 const arrForProduct = [
-    { to: "/", label: "УТЕПЛИТЕЛИ" },
-    { to: "/", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
-    { to: "/", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
-    { to: "/", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
+    { to: "#", label: "УТЕПЛИТЕЛИ" },
+    { to: "#", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
+    { to: "#", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
+    { to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
 ];
 
 // Header Desctop menu
@@ -60,7 +60,7 @@ const Header = () => {
                     </div>
                     <div className={styles.lansDesctop}>
                         {arrLan.map((link) => (
-                            <div>
+                            <div key={link.id}>
                                 <Link to={link.to} className={styles.lan}>
                                     {link.label}
                                 </Link>
