@@ -19,16 +19,16 @@ const arrLan = [
     { id: 3, to: "#", label: "RU" },
 ];
 const arrForRecycle = [
-    { to: "#", label: "СИНТЕТИЧЕСКИЕ ТКАНИ" },
-    { to: "#", label: "ХЛОПЧАТОБУМАЖНАЯ ТКАНЬ" },
-    { to: "#", label: "ПОЛИСТЕР" },
-    { to: "#", label: "ТРИКОТАЖ" },
+    { id: 1, to: "#", label: "СИНТЕТИЧЕСКИЕ ТКАНИ" },
+    { id: 2, to: "#", label: "ХЛОПЧАТОБУМАЖНАЯ ТКАНЬ" },
+    { id: 3, to: "#", label: "ПОЛИСТЕР" },
+    { id: 4, to: "#", label: "ТРИКОТАЖ" },
 ];
 const arrForProduct = [
-    { to: "#", label: "УТЕПЛИТЕЛИ" },
-    { to: "#", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
-    { to: "#", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
-    { to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
+    { id: 1, to: "#", label: "УТЕПЛИТЕЛИ" },
+    { id: 2, to: "#", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
+    { id: 3, to: "#", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
+    { id: 4, to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
 ];
 
 // Header Desctop menu
@@ -75,14 +75,15 @@ const Header = () => {
                         <Link className={styles.dropdownButton}>
                             ЧТО ПЕРЕРАБАТЫВАЕМ
                         </Link>
-
                         <div className={styles.dropdownContent}>
                             {arrForRecycle.map((link) => (
-                                <Link
-                                    key={link.to}
-                                    className={styles.dropdownLink}>
-                                    {link.label}
-                                </Link>
+                                <div key={link.id}>
+                                    <Link
+                                        key={link.to}
+                                        className={styles.dropdownLink}>
+                                        {link.label}
+                                    </Link>
+                                </div>
                             ))}
                         </div>
                     </div>
@@ -92,11 +93,13 @@ const Header = () => {
                         </Link>
                         <div className={styles.dropdownContent}>
                             {arrForProduct.map((link) => (
-                                <Link
-                                    key={link.to}
-                                    className={styles.dropdownLink}>
-                                    {link.label}
-                                </Link>
+                                <div key={link.id}>
+                                    <Link
+                                        key={link.to}
+                                        className={styles.dropdownLink}>
+                                        {link.label}
+                                    </Link>
+                                </div>
                             ))}
                         </div>
                     </div>
