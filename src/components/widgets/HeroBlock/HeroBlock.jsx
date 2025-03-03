@@ -8,11 +8,17 @@ const Hero = () => {
             <div className={styles.heroWrapper}>
                 <div className={styles.heroContainer}>
                     <div className={styles.heroImg}>
-                        <img src={imageTop} alt="heroTopImage" />
+                        <img
+                            src={imageTop}
+                            alt="heroTopImage"
+                            className={styles.imageTop}
+                        />
                     </div>
                     <div className={styles.heroTitle}>
-                        ЭФФЕКТИВНАЯ <br />
-                        Переработка отходов швейной отрасли
+                        <p className={styles.heroTitleText}>
+                            ЭФФЕКТИВНАЯ <br />
+                            Переработка отходов швейной отрасли
+                        </p>
                     </div>
                 </div>
             </div>

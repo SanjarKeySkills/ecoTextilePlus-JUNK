@@ -41,7 +41,11 @@ const Header = () => {
             <div className={styles.headerContainer}>
                 <div className={styles.headerUp}>
                     <Link to="/">
-                        <img src={logo} alt="main" />
+                        <img
+                            src={logo}
+                            alt="main"
+                            className={styles.headerLogo}
+                        />
                     </Link>
                     <div className={styles.listNavbarWrapper}>
                         <ul>
@@ -101,19 +105,26 @@ const Header = () => {
 
             {/* Mobile responcive menu */}
             <div className={styles.headerMobile}>
-                <Link to="/">
-                    <img src={logo} alt="main" onClick={togglePopup} />
-                </Link>
-                <img
-                    src={burgerButton}
-                    alt="burger"
-                    onClick={togglePopup}
-                    className={styles.burgerBtn}
-                />
-                <HeaderMobileMenu
-                    isOpenPopUp={isOpenPopUp}
-                    togglePopup={togglePopup}
-                />
+                <div className={styles.headerMobileWrapper}>
+                    <Link to="/">
+                        <img
+                            src={logo}
+                            alt="main"
+                            onClick={togglePopup}
+                            className={styles.headerLogo}
+                        />
+                    </Link>
+                    <img
+                        src={burgerButton}
+                        alt="burger"
+                        onClick={togglePopup}
+                        className={styles.burgerBtn}
+                    />
+                    <HeaderMobileMenu
+                        isOpenPopUp={isOpenPopUp}
+                        togglePopup={togglePopup}
+                    />
+                </div>
             </div>
         </div>
     );
@@ -126,10 +137,15 @@ const HeaderMobileMenu = (props) => {
     const handlePopUpLinkClick = () => togglePopup(); // Закрытие адаптивного popUp меню
     return (
         <div
-            className={styles.containerPopUp}
+            className={styles.popUpMobile}
             style={{ display: isOpenPopUp ? "block" : "none" }}>
             <div className={styles.wrapperPopUp}>
-                <img src={arrowPopUp} alt="arrow" onClick={togglePopup} />
+                <img
+                    src={arrowPopUp}
+                    alt="arrow"
+                    onClick={togglePopup}
+                    className={styles.arrowPopupImg}
+                />
                 <ul className={styles.listNavbarPopUp}>
                     {arrLinks.map((link) => (
                         <li key={link.to}>

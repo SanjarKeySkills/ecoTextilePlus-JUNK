@@ -27,7 +27,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 48px;
-    img {
+    .headerLogo {
         width: 320px;
         padding: 8px 8px 8px 0;
     }
@@ -130,15 +130,24 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 24px 0px;
+    padding: 0px 0px;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    background-color: #fff;
     z-index: 7;
-    img {
-        max-width: 248px;
-        padding-right: 8px;
+    background-color: #fff;
+}
+
+.headerMobileWrapper {
+    width: 1440px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #018e49;
+
+    .headerLogo {
+        width: 320px;
     }
     .burgerBtn {
         max-width: 48px;
@@ -147,27 +156,27 @@
 
 // -----------------------------------
 // Header popUp
-.containerPopUp {
+.popUpMobile {
     width: 100%;
-    height: 160vh;
+    height: 120vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 7;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     background-color: #013a3c;
 }
+
 .wrapperPopUp {
     padding: 16px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    img {
-        max-width: 56px;
+    .arrowPopupImg {
+        max-width: 64px;
     }
     ul {
         padding-inline-start: 0;
@@ -244,9 +253,8 @@
 @media (max-width: 1140px) {
     .headerUp {
         gap: 0;
-        img {
-            max-width: 296px;
-            padding: 8px 8px 4px 0;
+        .headerLogo {
+            max-width: 288px;
         }
         ul {
             gap: 24px;
@@ -270,8 +278,10 @@
             margin-block-end: 4px;
         }
     }
-
-    img {
+    .headerLogo {
+        max-width: 224px;
+    }
+    .arrowPopupImg {
         max-width: 48px;
     }
     .wrapperPopUp {
@@ -290,6 +300,15 @@
         .link {
             font-size: 14px;
         }
+    }
+}
+
+@media (max-width: 424px) {
+    .headerLogo {
+        max-width: 192px;
+    }
+    .popUpMobile {
+        height: 160vh;
     }
 }
 

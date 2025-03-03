@@ -1,68 +1,87 @@
 // HeroBottom
-.heroContainer {
+.mediaBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mediaContainer {
+    max-width: 1440px;
+    padding: 0 24px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 32px;
 }
-.heroContent {
+.mediaContent {
     font-size: 16px;
     border-radius: 8px;
-    padding: 56px;
+    padding: 24px;
     font-weight: 500;
-    font-size: 20px;
     background-color: #013a3c;
     text-align: justify;
 }
-.heroManifest {
-    max-width: 100%;
-    padding: 16px;
-    background-color: #ff851b;
+.mediaText {
     color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
     font-size: 20px;
+    padding: 12px;
 }
-p {
-    padding: 16px;
-    padding: 0 24px;
-}
-video {
-    max-width: 1024px;
+.videoBlock {
+    width: 100%;
     object-fit: cover;
     border-radius: 8px;
     text-align: center;
 }
+.manifestBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-@media (max-width: 1324px) {
-    video {
-        max-width: 400px;
+.heroManifest {
+    width: 100%;
+    padding: 24px;
+    background-color: #ff851b;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+@media (max-width: 1344px) {
+    .mediaText {
+        font-size: 16px;
+        padding: 8px;
+        margin: 0;
     }
+
     .heroManifest {
         max-width: 100%;
         padding: 8px;
     }
 }
-@media (max-width: 1024px) {
-    // video {
-    //     max-width: 320px;
-    // }
-}
-
-@media (max-width: 424px) {
-    .heroContent {
-        font-size: 16px;
-        padding: 8px;
+@media (max-width: 1144px) {
+    .mediaContainer {
+        padding: 0 16px;
+        flex-direction: column;
     }
-    .heroWrapper {
-        max-width: 440px;
+}
+@media (max-width: 1120px) {
+    .mediaContainer {
+        margin-top: 116px;
     }
     .heroManifest {
-        max-width: 320px;
         padding: 8px;
-        font-size: 14px;
+    }
+}
+@media (max-width: 880px) {
+    .manifestBlock {
+        padding: 0 16px;
+    }
+    .heroManifest {
+        padding: 16px;
+        font-size: 16px;
     }
 }
