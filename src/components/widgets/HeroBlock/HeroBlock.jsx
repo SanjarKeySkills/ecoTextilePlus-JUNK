@@ -6,8 +6,8 @@ const Hero = () => {
     return (
         <div className={styles.hero}>
             <div className={styles.heroWrapper}>
-                <div className={styles.heroTop}>
-                    <div className={styles.heroTopImg}>
+                <div className={styles.heroContainer}>
+                    <div className={styles.heroImg}>
                         <img src={imageTop} alt="heroTopImage" />
                     </div>
                     <div className={styles.heroTitle}>

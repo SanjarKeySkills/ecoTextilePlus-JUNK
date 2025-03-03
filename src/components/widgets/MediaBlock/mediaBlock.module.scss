@@ -1,0 +1,68 @@
+// HeroBottom
+.heroContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.heroContent {
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 56px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #013a3c;
+    text-align: justify;
+}
+.heroManifest {
+    max-width: 100%;
+    padding: 16px;
+    background-color: #ff851b;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 20px;
+}
+p {
+    padding: 16px;
+    padding: 0 24px;
+}
+video {
+    max-width: 1024px;
+    object-fit: cover;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media (max-width: 1324px) {
+    video {
+        max-width: 400px;
+    }
+    .heroManifest {
+        max-width: 100%;
+        padding: 8px;
+    }
+}
+@media (max-width: 1024px) {
+    // video {
+    //     max-width: 320px;
+    // }
+}
+
+@media (max-width: 424px) {
+    .heroContent {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .heroWrapper {
+        max-width: 440px;
+    }
+    .heroManifest {
+        max-width: 320px;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
