@@ -50,8 +50,10 @@ const Header = () => {
                     <div className={styles.listNavbarWrapper}>
                         <ul>
                             {arrLinks.map((link) => (
-                                <li key={link.to}>
-                                    <Link to={link.to} className={styles.link}>
+                                <li key={link.id}>
+                                    <Link
+                                        // to={link.to}
+                                        className={styles.link}>
                                         {link.label}
                                     </Link>
                                 </li>
@@ -61,7 +63,9 @@ const Header = () => {
                     <div className={styles.lansDesctop}>
                         {arrLan.map((link) => (
                             <div key={link.id}>
-                                <Link to={link.to} className={styles.lan}>
+                                <Link
+                                    // to={link.to}
+                                    className={styles.lan}>
                                     {link.label}
                                 </Link>
                             </div>
@@ -79,7 +83,7 @@ const Header = () => {
                             {arrForRecycle.map((link) => (
                                 <div key={link.id}>
                                     <Link
-                                        key={link.to}
+                                        // key={link.to}
                                         className={styles.dropdownLink}>
                                         {link.label}
                                     </Link>
@@ -95,7 +99,7 @@ const Header = () => {
                             {arrForProduct.map((link) => (
                                 <div key={link.id}>
                                     <Link
-                                        key={link.to}
+                                        // key={link.to}
                                         className={styles.dropdownLink}>
                                         {link.label}
                                     </Link>
@@ -151,9 +155,9 @@ const HeaderMobileMenu = (props) => {
                 />
                 <ul className={styles.listNavbarPopUp}>
                     {arrLinks.map((link) => (
-                        <li key={link.to}>
+                        <li key={link.id}>
                             <Link
-                                to={link.to}
+                                // to={link.to}
                                 onClick={handlePopUpLinkClick}
                                 className={styles.link}>
                                 {link.label}
@@ -163,9 +167,9 @@ const HeaderMobileMenu = (props) => {
                 </ul>
                 <ul className={styles.listLanPopUp}>
                     {arrLan.map((link) => (
-                        <li key={link.to}>
+                        <li key={link.id}>
                             <Link
-                                to={link.to}
+                                // to={link.to}
                                 onClick={handlePopUpLinkClick}
                                 className={styles.lan}>
                                 {link.label}
@@ -179,9 +183,13 @@ const HeaderMobileMenu = (props) => {
                     <p>ЧТО ПЕРЕРАБАТЫВАЕМ</p>
                     <div className={styles.popUpList}>
                         {arrForRecycle.map((link) => (
-                            <Link key={link.to} className={styles.link}>
-                                {link.label}
-                            </Link>
+                            <div key={link.id}>
+                                <Link
+                                    // key={link.to}
+                                    className={styles.link}>
+                                    {link.label}
+                                </Link>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -189,9 +197,13 @@ const HeaderMobileMenu = (props) => {
                     <p>ЧТО ПРОИЗВОДИМ</p>
                     <div className={styles.popUpList}>
                         {arrForProduct.map((link) => (
-                            <Link key={link.to} className={styles.link}>
-                                {link.label}
-                            </Link>
+                            <div key={link.id}>
+                                <Link
+                                    // key={link.to}
+                                    className={styles.link}>
+                                    {link.label}
+                                </Link>
+                            </div>
                         ))}
                     </div>
                 </div>
