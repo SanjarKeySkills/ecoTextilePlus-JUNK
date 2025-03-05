@@ -6,7 +6,7 @@ const WelcomeBlock = () => {
         <div className={styles.welcome}>
             <div className={styles.welcomeWrapper}>
                 <p className={styles.welcomeText}>
-                    Приветствуем вас от имени компании ОсОО "Ду Кастомс"! Мы
+                    Приветствуем вас от имени компании "ECOTEXTILEPLUS"! Мы
                     гордимся тем, что являемся частью движения за экологически
                     чистое будущее. Наша компания специализируется на
                     переработке отходов швейной отрасли, и наша цель — не только
@@ -37,7 +37,6 @@ const WelcomeBlock = () => {
                     уменьшение воздействия на окружающую среду, обеспечивая
                     будущее без отходов.
                 </div>
-                <video src={videoBg} loop muted ref={videoRef}></video>
             </div>
             <div>
                 <p className={styles.heroManifest}>
