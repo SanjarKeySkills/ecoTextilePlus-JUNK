@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./hero.module.scss";
 import imageTop from "../../../assets/gallery/heroTop.png";
 
-const Hero = () => {
+const HeroBlock = () => {
     return (
         <div className={styles.hero}>
             <div className={styles.heroWrapper}>
@@ -26,4 +26,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default HeroBlock;
