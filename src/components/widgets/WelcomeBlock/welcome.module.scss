@@ -1,51 +1,32 @@
-.welcome {
+.welcomeBlock {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
 }
-.welcomeWrapper {
+.welcomeContainer {
     max-width: 1440px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    background-color: #3d9970;
-    text-align: justify;
+    padding: 0 24px 24px;
 }
 .welcomeText {
     font-size: 24px;
     color: #fff;
-    padding: 0px 120px 16px;
+    padding: 32px;
+    margin: 0;
+    text-align: justify;
+    background-color: #3d9970;
+    border-radius: 8px;
 }
-@media (max-width: 1024px) {
-    .welcomeWrapper {
-        font-size: 20px;
-        padding: 0px 96px 24px;
-    }
-}
+
 @media (max-width: 880px) {
-    .welcomeWrapper {
-        font-size: 20px;
-        padding: 0px 56px 16px;
-    }
     .welcomeText {
-        font-size: 16px;
-        color: #fff;
-    }
-}
-@media (max-width: 768px) {
-    .welcomeWrapper {
-        font-size: 18px;
-        padding: 0px 24px 16px;
+        font-size: 20px;
     }
 }
 @media (max-width: 424px) {
-    .welcomeWrapper {
-        font-size: 8px;
-        padding: 0px 0px 8px;
+    .welcomeText {
+        line-height: 32px;
     }
 }
