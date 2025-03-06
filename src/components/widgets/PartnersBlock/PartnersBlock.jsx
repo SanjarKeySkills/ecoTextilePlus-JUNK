@@ -38,7 +38,7 @@ const PartnersSlider = () => {
 
     return (
         <div className={styles.wrapperPartnersSlider}>
-            <h2 className={styles.partnersSlider}>ПАРТНЕРЫ</h2>
+            <h2 className={styles.partnersTitle}>ПАРТНЕРЫ</h2>
             <div
                 className={styles.slider}
                 onTouchStart={handleTouchStart}
