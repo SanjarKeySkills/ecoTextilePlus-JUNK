@@ -19,14 +19,16 @@
 .infoCard {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
+    background-color: #ff851b;
+    border-radius: 8px;
 }
 .industryBlock {
     border-radius: 8px;
-    background-color: #ff851b;
     padding: 24px;
     width: 50%;
+    max-height: 640px;
 }
 .listWrapper {
     display: flex;
@@ -37,9 +39,16 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0;
-}
-li {
-    font-size: 16px;
+    list-style-type: none;
+    h5 {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0;
+    }
+    li {
+        font-size: 16px;
+        text-align: justify;
+    }
 }
 
 @media (max-width: 1024px) {

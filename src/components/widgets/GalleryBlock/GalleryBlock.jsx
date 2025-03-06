@@ -25,5 +25,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
-//  <img src={img6} alt="img6" />

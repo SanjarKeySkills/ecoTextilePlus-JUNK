@@ -19,10 +19,15 @@ const arrLan = [
     { id: 3, to: "#", label: "RU" },
 ];
 const arrForRecycle = [
-    { id: 123, to: "#", label: "СИНТЕТИЧЕСКИЕ ТКАНИ" },
-    { id: 2234, to: "#", label: "ХЛОПЧАТОБУМАЖНАЯ ТКАНЬ" },
-    { id: 3456, to: "#", label: "ПОЛИСТЕР" },
-    { id: 4678, to: "#", label: "ТРИКОТАЖ" },
+    { id: 123, to: "#", label: "ХЛОПОК" },
+    { id: 2234, to: "#", label: "ПОЛИЭСТЕР" },
+    { id: 3456, to: "#", label: "ШЕРСТЬ" },
+    { id: 4678, to: "#", label: "ЛЕН" },
+    { id: 4678, to: "#", label: "НЕЙЛОН" },
+    { id: 4678, to: "#", label: "ВИСКОЗА" },
+    { id: 4678, to: "#", label: "СПАНДЕКС" },
+    { id: 4678, to: "#", label: "ДЕНИМ" },
+    { id: 4678, to: "#", label: "АКРИЛ" },
 ];
 const arrForProduct = [
     { id: 1890, to: "#", label: "УТЕПЛИТЕЛИ" },
