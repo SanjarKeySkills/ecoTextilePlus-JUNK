@@ -14,32 +14,31 @@ const arrLinks = [
     { to: "/contacts", label: "КОНТАКТЫ" },
 ];
 const arrLan = [
-    { id: 1, to: "#", label: "KG" },
-    { id: 2, to: "#", label: "EN" },
-    { id: 3, to: "#", label: "RU" },
+    { id: 1, to: "/kg", label: "KG" },
+    { id: 2, to: "/en", label: "EN" },
+    { id: 3, to: "/ru", label: "RU" },
 ];
 const arrForRecycle = [
-    { id: 123, to: "#", label: "ХЛОПОК" },
-    { id: 2234, to: "#", label: "ПОЛИЭСТЕР" },
-    { id: 3456, to: "#", label: "ШЕРСТЬ" },
-    { id: 4678, to: "#", label: "ЛЕН" },
-    { id: 4678, to: "#", label: "НЕЙЛОН" },
-    { id: 4678, to: "#", label: "ВИСКОЗА" },
-    { id: 4678, to: "#", label: "СПАНДЕКС" },
-    { id: 4678, to: "#", label: "ДЕНИМ" },
-    { id: 4678, to: "#", label: "АКРИЛ" },
+    { id: 121, to: "#", label: "ХЛОПОК" },
+    { id: 122, to: "#", label: "ПОЛИЭСТЕР" },
+    { id: 123, to: "#", label: "ШЕРСТЬ" },
+    { id: 124, to: "#", label: "ЛЕН" },
+    { id: 125, to: "#", label: "НЕЙЛОН" },
+    { id: 126, to: "#", label: "ВИСКОЗА" },
+    { id: 127, to: "#", label: "СПАНДЕКС (ЭЛАСТАН)" },
+    { id: 128, to: "#", label: "ДЕНИМ (ДЖИНСОВАЯ ТКАНЬ)" },
+    { id: 129, to: "#", label: "АКРИЛ" },
 ];
 const arrForProduct = [
-    { id: 1890, to: "#", label: "УТЕПЛИТЕЛИ" },
-    { id: 12342, to: "#", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
-    { id: 34567, to: "#", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
-    { id: 487876, to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
+    { id: 131, to: "#", label: "УТЕПЛИТЕЛИ" },
+    { id: 132, to: "#", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
+    { id: 133, to: "#", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
+    { id: 134, to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
 ];
 
 // Header Desctop menu
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState(false);
-
     const togglePopup = () => setOpenPopUp(!isOpenPopUp);
     return (
         <div className={styles.header}>
@@ -56,9 +55,7 @@ const Header = () => {
                         <ul>
                             {arrLinks.map((link) => (
                                 <li key={link.id}>
-                                    <Link
-                                        // to={link.to}
-                                        className={styles.link}>
+                                    <Link to={link.to} className={styles.link}>
                                         {link.label}
                                     </Link>
                                 </li>
@@ -67,13 +64,12 @@ const Header = () => {
                     </div>
                     <div className={styles.lansDesctop}>
                         {arrLan.map((link) => (
-                            <div key={link.id}>
-                                <Link
-                                    // to={link.to}
-                                    className={styles.lan}>
-                                    {link.label}
-                                </Link>
-                            </div>
+                            <div className={styles.lan}>{link.label}</div>
+                            // <div key={link.id}>
+                            //     <Link to={link.to} className={styles.lan}>
+                            //         {link.label}
+                            //     </Link>
+                            // </div>
                         ))}
                     </div>
                 </div>
@@ -88,7 +84,7 @@ const Header = () => {
                             {arrForRecycle.map((link) => (
                                 <div key={link.id}>
                                     <Link
-                                        // key={link.to}
+                                        key={link.to}
                                         className={styles.dropdownLink}>
                                         {link.label}
                                     </Link>
@@ -104,7 +100,7 @@ const Header = () => {
                             {arrForProduct.map((link) => (
                                 <div key={link.id}>
                                     <Link
-                                        // key={link.to}
+                                        key={link.to}
                                         className={styles.dropdownLink}>
                                         {link.label}
                                     </Link>
@@ -162,7 +158,7 @@ const HeaderMobileMenu = (props) => {
                     {arrLinks.map((link) => (
                         <li key={link.id}>
                             <Link
-                                // to={link.to}
+                                to={link.to}
                                 onClick={handlePopUpLinkClick}
                                 className={styles.link}>
                                 {link.label}
@@ -174,7 +170,7 @@ const HeaderMobileMenu = (props) => {
                     {arrLan.map((link) => (
                         <li key={link.id}>
                             <Link
-                                // to={link.to}
+                                to={link.to}
                                 onClick={handlePopUpLinkClick}
                                 className={styles.lan}>
                                 {link.label}
@@ -189,9 +185,7 @@ const HeaderMobileMenu = (props) => {
                     <div className={styles.popUpList}>
                         {arrForRecycle.map((link) => (
                             <div key={link.id}>
-                                <Link
-                                    // key={link.to}
-                                    className={styles.link}>
+                                <Link key={link.to} className={styles.link}>
                                     {link.label}
                                 </Link>
                             </div>
@@ -203,9 +197,7 @@ const HeaderMobileMenu = (props) => {
                     <div className={styles.popUpList}>
                         {arrForProduct.map((link) => (
                             <div key={link.id}>
-                                <Link
-                                    // key={link.to}
-                                    className={styles.link}>
+                                <Link key={link.to} className={styles.link}>
                                     {link.label}
                                 </Link>
                             </div>

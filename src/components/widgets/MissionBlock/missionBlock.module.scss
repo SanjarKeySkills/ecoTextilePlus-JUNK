@@ -6,7 +6,78 @@
 }
 .missionContainer {
     width: 1440px;
-    background-color: chartreuse;
-    color: black;
+    padding: 0 24px;
+    text-align: justify;
+}
+.missionTitle {
+    font-size: 32px;
+    color: #013a3c;
+    font-weight: bold;
     text-align: center;
+}
+.missionProposal {
+    padding: 24px 32px;
+    background-color: #ff851b;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    ul {
+        padding-inline-start: 16px;
+    }
+}
+.proposalText {
+    font-size: 24px;
+    margin: 0;
+}
+.missionInfo {
+    padding: 24px 32px;
+    background-color: #018e49;
+    border-radius: 8px;
+}
+.infoText {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.paragraphTitle {
+    font-size: 32px;
+    color: #013a3c;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 1120px) {
+    .missionBlock {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 880px) {
+    .missionTitle {
+        font-size: 24px;
+    }
+    .proposalText {
+        font-size: 20px;
+    }
+    .infoText {
+        font-size: 20px;
+    }
+    .paragraphTitle {
+        font-size: 24px;
+    }
+}
+@media (max-width: 424px) {
+    .missionTitle {
+        font-size: 24px;
+    }
+    .proposalText {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .infoText {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .paragraphTitle {
+        font-size: 24px;
+    }
 }
