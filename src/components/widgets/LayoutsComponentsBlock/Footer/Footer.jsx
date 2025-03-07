@@ -49,80 +49,88 @@ const arrSocial = [
 const Footer = () => {
     return (
         <div className={styles.footer}>
-            <div className={styles.footerWrapper}>
-                <div className={styles.footerContacts}>
-                    <img src={footerLogo} alt="Footer Logo" />
+            <div className={styles.contactContainer}>
+                <div className={styles.footerWrapper}>
+                    <div className={styles.footerContacts}>
+                        <img src={footerLogo} alt="Footer Logo" />
+                        <p>
+                            Кыргызская Республика г.Бишкек Первомайский район,
+                            ул. Токтоналиева дом 44 - 63
+                            <br /> <br /> san4s_47@mail.ru
+                            <br /> +996 700 840 099
+                        </p>
+                    </div>
+                    <div className={styles.footerInfo}>
+                        <ul className={styles.footerList}>
+                            {arrLinks.map((link) => (
+                                <li key={link.to}>
+                                    <Link to={link.to} className={styles.link}>
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={styles.footerInfo}>
+                        <ul className={styles.footerList}>
+                            {arrForRecycle.map((link) => (
+                                <li key={link.to}>
+                                    <Link to={link.to} className={styles.link}>
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={styles.footerInfo}>
+                        <ul className={styles.footerList}>
+                            {arrForProduct.map((link) => (
+                                <li key={link.to}>
+                                    <Link to={link.to} className={styles.link}>
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={styles.footerAnnotation}>
+                        <p>
+                            Do Customs является профессиональной организацией,
+                            добровольно объединяющей физических лиц, в лице
+                            национальных и международных независимых директоров
+                            и экспертов в области корпоративного управления.
+                        </p>
+                        <ul className={styles.listLanFooter}>
+                            {arrLan.map((link) => (
+                                <li key={link.to}>
+                                    <Link to={link.to} className={styles.lan}>
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                        <ul className={styles.listSocialFooter}>
+                            {arrSocial.map((link) => (
+                                <li key={link.to}>
+                                    <Link
+                                        to={link.to}
+                                        className={styles.socialImg}>
+                                        <img
+                                            src={link.label}
+                                            alt="Social Logo"
+                                        />
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                <div className={styles.remarkContainer}>
                     <p>
-                        Кыргызская Республика г.Бишкек Первомайский район,
-                        <br /> ул. Токтоналиева дом 44 - 63
-                        <br /> <br /> san4s_47@mail.ru
-                        <br /> +996 700 840 099
+                        All rights reserved. Developed by "KEYSKILLS" LLC. The
+                        Kyrgyz Republic Bishkek 2025.
                     </p>
                 </div>
-                <div className={styles.footerInfo}>
-                    <ul className={styles.footerList}>
-                        {arrLinks.map((link) => (
-                            <li key={link.to}>
-                                <Link to={link.to} className={styles.link}>
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className={styles.footerInfo}>
-                    <ul className={styles.footerList}>
-                        {arrForRecycle.map((link) => (
-                            <li key={link.to}>
-                                <Link to={link.to} className={styles.link}>
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className={styles.footerInfo}>
-                    <ul className={styles.footerList}>
-                        {arrForProduct.map((link) => (
-                            <li key={link.to}>
-                                <Link to={link.to} className={styles.link}>
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className={styles.footerAnnotation}>
-                    <p>
-                        Do Customs является профессиональной организацией,
-                        добровольно объединяющей физических лиц, в лице
-                        национальных и международных независимых директоров и
-                        экспертов в области корпоративного управления.
-                    </p>
-
-                    <ul className={styles.listLanFooter}>
-                        {arrLan.map((link) => (
-                            <li key={link.to}>
-                                <Link to={link.to} className={styles.lan}>
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul className={styles.listSocialFooter}>
-                        {arrSocial.map((link) => (
-                            <li key={link.to}>
-                                <Link to={link.to} className={styles.socialImg}>
-                                    <img src={link.label} alt="Social Logo" />
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-            <div className={styles.remark}>
-                All rights reserved. Developed by "KEYSKILLS" LLC. The Kyrgyz
-                Republic Bishkek 2025.
             </div>
         </div>
     );

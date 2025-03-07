@@ -1,3 +1,8 @@
+* {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
 .footer {
     width: 100%;
     display: flex;
@@ -5,8 +10,11 @@
     align-items: center;
     justify-content: center;
 }
+.contactContainer {
+    max-width: 1440px;
+}
+
 .footerWrapper {
-    width: 1440px;
     display: flex;
     flex-direction: row;
     background-color: #013a3c;
@@ -18,7 +26,7 @@
     align-items: center;
     justify-content: space-around;
     img {
-        width: 320px;
+        max-width: 320px;
     }
     p {
         color: #ffffff;
@@ -33,7 +41,6 @@
 .footerList {
     list-style-type: none;
     padding-inline-start: 0;
-
     li {
         padding-bottom: 8px;
     }
@@ -41,6 +48,7 @@
         color: #ffffff;
         font-weight: bold;
         font-size: 12px;
+        text-decoration: none;
         &:hover {
             color: #447ac6;
         }
@@ -64,9 +72,11 @@ li {
         font-size: 12px;
         font-weight: bold;
         text-align: center;
+        text-decoration: none;
         padding: 8px;
         border-radius: 4px;
         background-color: #ff851b;
+        color: #ffffff;
         &:hover {
             background-color: #018e49;
         }
@@ -90,10 +100,73 @@ li {
         color: #ffffff;
     }
 }
-.remark {
-    width: 1440px;
+.remarkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #9ea09d;
+
     color: #ffffff;
-    padding: 8px 0;
-    text-align: center;
+}
+
+// -----------------------------------
+// Responcive
+
+@media (max-width: 1024px) {
+    .footerContacts {
+        img {
+            max-width: 240px;
+        }
+        p {
+            padding: 16px 8px 0;
+        }
+    }
+}
+@media (max-width: 928px) {
+    .footerContacts {
+        p {
+            font-size: 12px;
+        }
+    }
+    .footerInfo {
+        .link {
+            font-size: 10px;
+        }
+    }
+    .listLanFooter {
+        .lan {
+            font-size: 12px;
+        }
+    }
+    .footerAnnotation {
+        p {
+            min-width: 240px;
+            font-size: 12px;
+        }
+    }
+    .remarkContainer {
+        p {
+            font-size: 10px;
+        }
+    }
+}
+@media (max-width: 880px) {
+    .footerWrapper {
+        padding: 24px 0;
+        flex-direction: column;
+    }
+    .footerAnnotation {
+        padding: 24px;
+        p {
+            min-width: 0;
+        }
+    }
+    @media (max-width: 424px) {
+        .remarkContainer {
+            p {
+                font-size: 8px;
+            }
+        }
+    }
 }
