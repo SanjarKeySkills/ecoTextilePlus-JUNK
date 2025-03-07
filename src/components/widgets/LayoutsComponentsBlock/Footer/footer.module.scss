@@ -15,6 +15,7 @@
 }
 
 .footerWrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
     background-color: #013a3c;
@@ -106,8 +107,9 @@ li {
     justify-content: center;
     align-items: center;
     background-color: #9ea09d;
-
-    color: #ffffff;
+    p {
+        color: #ffffff;
+    }
 }
 
 // -----------------------------------
@@ -152,21 +154,69 @@ li {
     }
 }
 @media (max-width: 880px) {
+    .footerContacts {
+        p {
+            font-size: 20px;
+        }
+    }
+
     .footerWrapper {
         padding: 24px 0;
         flex-direction: column;
     }
     .footerAnnotation {
         padding: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         p {
             min-width: 0;
         }
     }
-    @media (max-width: 424px) {
-        .remarkContainer {
-            p {
-                font-size: 8px;
-            }
+    .footerInfo {
+        .link {
+            font-size: 16px;
+        }
+    }
+    .footerAnnotation {
+        p {
+            min-width: 240px;
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 424px) {
+    .remarkContainer {
+        p {
+            font-size: 8px;
+        }
+    }
+    .footerContacts {
+        p {
+            font-size: 12px;
+        }
+    }
+    .footerInfo {
+        .link {
+            font-size: 10px;
+        }
+    }
+    .listLanFooter {
+        .lan {
+            font-size: 12px;
+        }
+    }
+    .footerAnnotation {
+        p {
+            min-width: 240px;
+            font-size: 12px;
+        }
+    }
+    .remarkContainer {
+        p {
+            font-size: 10px;
+            padding: 0 8px;
         }
     }
 }

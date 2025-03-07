@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./missionBlock.module.scss";
+import missionImg from "../../../assets/missionImg.png";
 
 const MissionBlock = () => {
     return (
@@ -23,6 +24,7 @@ const MissionBlock = () => {
                         обеспечивая будущее без отходов.
                     </p>
                 </div>
+
                 <div className={styles.missionInfo}>
                     <p className={styles.infoText}>
                         Переработка отходов швейной отрасли позволяет снизить
@@ -65,6 +67,13 @@ const MissionBlock = () => {
                         и синтетических материалов.
                     </p>
                 </div>
+
+                <div className={styles.missionImg}></div>
+                <span>
+                    Швейный бизнес по прежнему сжигет швейные отходы в качестве
+                    топлива для обогрева. <br /> Автор фото: Михеев Дмитрий.
+                </span>
+
                 <h2 className={styles.paragraphTitle}>
                     Реализация и преимущества
                 </h2>

@@ -45,6 +45,14 @@
     font-weight: bold;
     text-align: center;
 }
+.missionImg {
+    max-width: 1440px;
+    height: 320px;
+    margin-top: 24px;
+    border-radius: 8px;
+    background-image: url(../../../assets/missionImg.png);
+    background-size: cover;
+}
 
 @media (max-width: 1120px) {
     .missionBlock {
@@ -79,5 +87,8 @@
     }
     .paragraphTitle {
         font-size: 24px;
+    }
+    span {
+        font-size: 10px;
     }
 }
