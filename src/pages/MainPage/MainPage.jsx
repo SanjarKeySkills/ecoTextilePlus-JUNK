@@ -1,5 +1,5 @@
 import React from "react";
-import HeroBlock from "../../components/Widgets/HeroBlock/heroBlock.jsx";
+// import HeroBlock from "../../components/Widgets/HeroBlock/heroBlock.jsx";
 import MediaBlock from "../../components/Widgets/MediaBlock/MediaBlock";
 import WelcomeBlock from "../../components/Widgets/WelcomeBlock/WelcomeBlock.jsx";
 import InfoTableBlock from "../../components/Widgets/InfoTableBlock/InfoTableBlock.jsx";
@@ -9,7 +9,7 @@ import GalleryBlock from "../../components/Widgets/GalleryBlock/GalleryBlock.jsx
 const MainPage = () => {
     return (
         <div>
-            <HeroBlock />
+            {/* <HeroBlock /> */}
             <MediaBlock />
             <WelcomeBlock />
             <InfoTableBlock />
