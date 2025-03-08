@@ -1,7 +1,8 @@
 import React from "react";
+// import ContactBlock from "../../components/Widgets/ContactBlock/ContactBlock.jsx";
 
 const ContactPage = () => {
-    return <div>+996 3232 3233 3434</div>;
+    return <div>{/* <ContactBlock /> */}</div>;
 };
 
 export default ContactPage;

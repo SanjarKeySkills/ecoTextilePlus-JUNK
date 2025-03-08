@@ -59,14 +59,14 @@ const App = () => {
                             </Suspense>
                         }
                     /> */}
-                    <Route
+                    {/* <Route
                         path="/contacts"
                         element={
                             <Suspense fallback={<ContentFallback />}>
                                 <ContactPage />
                             </Suspense>
                         }
-                    />
+                    /> */}
                     <Route
                         path="/gallery"
                         element={

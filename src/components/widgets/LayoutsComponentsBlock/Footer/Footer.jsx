@@ -54,8 +54,8 @@ const Footer = () => {
                     <div className={styles.footerContacts}>
                         <img src={footerLogo} alt="Footer Logo" />
                         <p>
-                            Кыргызская Республика г.Бишкек Первомайский район,
-                            ул. Токтоналиева дом 44 - 63
+                            Кыргызская Республика г.Бишкек, ул. Токтоналиева дом
+                            44 - 63
                             <br /> <br /> san4s_47@mail.ru
                             <br /> +996 700 840 099
                         </p>
